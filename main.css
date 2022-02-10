@@ -119,3 +119,49 @@
 .action a {
   font-size: 25px;
 }
+
+/* Works section styles */
+.works {
+  padding: 24px;
+  display: flex;
+}
+
+.works-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 5px;
+  grid-auto-flow: row;
+  width: 100%;
+}
+
+.work-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-image {
+  max-width: 327px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-image img {
+  width: 100%;
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.work-tags ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
