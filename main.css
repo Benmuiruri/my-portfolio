@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-nav ul {
+  border: 1px solid black;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome,
+.menu {
+  border: 1px solid peru;
+}
+
+.welcome{
+  color: #28352f;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 90px;
+  height: 28px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.menu {
+  color: #28352f;
+  font-size: 20px;
+}
+.fa-solid {
+  color: #28352f;
+  text-align: center;
+  display: inline-block;  
+}
+
+.social {
+  border: 1px solid peru;
+  display: flex;
+}
+/* mobile styles */
+@media (max-width: 500px) {
+}
