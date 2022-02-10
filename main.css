@@ -1,49 +1,118 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header styles */
+.top {
+  height: 48px;
+}
+
+.flex-nav {
+  padding: 20px;
 }
 
 .flex-nav ul {
-  border: 1px solid black;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.welcome,
-.menu {
-  border: 1px solid peru;
-}
-
-.welcome{
+.logo-text {
   color: #28352f;
   text-decoration: none;
-  display: inline-block;
   text-align: center;
   width: 90px;
   height: 28px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
 }
 
-.menu {
-  color: #28352f;
-  font-size: 20px;
-}
 .fa-solid {
+  font-size: 20px;
   color: #28352f;
   text-align: center;
-  display: inline-block;  
+  display: inline-block;
 }
 
-.social {
-  border: 1px solid peru;
+/* Page styles */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 24px;
   display: flex;
 }
-/* mobile styles */
-@media (max-width: 500px) {
+/* Hero styles */
+
+.hero {
+  width: 100%;
+  background-image: url(/assets/hero-image.png);
+  background-size: cover;
+}
+
+.hero-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-style: normal;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  max-width: 327px;
+}
+
+.hero-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  max-width: 327px;
+}
+
+.hero-content span {
+  color: #60b47f;
+}
+
+.socials {
+  margin-top: 25px;
+}
+
+.socials ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social-link a {
+  font-size: 20px;
+  color: #172b4d;
+  text-decoration: none;
+  padding: 20px 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+}
+.action a {
+  font-size: 25px;
 }
