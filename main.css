@@ -50,6 +50,7 @@
   padding: 24px;
   display: flex;
 }
+
 /* Hero styles */
 
 .hero {
@@ -100,6 +101,7 @@
   display: flex;
   justify-content: center;
 }
+
 .social-link a {
   font-size: 20px;
   color: #172b4d;
@@ -113,6 +115,8 @@
   display: flex;
   justify-content: center;
 }
+
 .action a {
   font-size: 25px;
 }
+
