@@ -7,6 +7,7 @@
 .works,
 .about {
   padding: 20px 0;
+  max-width: 327px;
 }
 
 .btn {
@@ -201,21 +202,15 @@ main {
 .work-tags {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 327px;
-  flex: 1; 
 }
 .social {
-  flex: 1;
   margin: 0px 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
   padding: 8px 12px;
   background: #ebf0ee;
   border-radius: 4px;
-  max-width: 327px;
 }
 
 .work-tags a {
@@ -255,18 +250,12 @@ main {
 }
 
 /* About me styles */
-.about {
-  border: 1px solid red;
-  max-width: 327px;
-}
 
 .about-wrapper {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 0 20px; */
 }
 
 .about-content {
@@ -320,7 +309,7 @@ main {
 }
 
 .skill-icon {
-  padding-bottom: 10px;
+  padding:  0 0 10px 0;
 }
 
 .about-skill h3 {
@@ -329,10 +318,11 @@ main {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  padding-bottom: 20px;
+  padding:  0 0 50px 0;
 }
 
 .skill-social {
+  padding: 12px;
   border-radius: 8px;
   background: #ffffff;
 }
