@@ -86,7 +86,7 @@ main {
 
 .hero {
   width: 100%;
-  background-image: url(/assets/hero-image.png);
+  background-image: url(./assets/hero-image.png);
   background-size: cover;
   background-position: center;
 }
@@ -164,7 +164,7 @@ main {
   color: #172b4d;
   margin: 24px 0;
   padding: 50px 0;
-  background-image: url(/assets/Frame.png);
+  background-image: url(./assets/Frame.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -286,7 +286,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(/assets/about-top-vector.png), url(/assets/about-bottom-vector.png);
+  background-image: url(./assets/about-top-vector.png), url(./assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
 }
