@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-.works,.about {
+
+.works,
+.about {
   padding: 20px 0;
   max-width: 327px;
 }
@@ -25,7 +27,7 @@
 }
 
 .btn:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .btn:active {
@@ -206,7 +208,7 @@ main {
 }
 
 .social {
-  margin: 0px 8px;
+  margin: 0 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -325,7 +327,7 @@ main {
   border-radius: 8px;
   background: #fff;
 }
+
 .skill-social a {
   color: #36b37e;
 }
-
