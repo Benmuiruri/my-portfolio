@@ -168,9 +168,11 @@ main {
   background-repeat: no-repeat;
   background-position: top right;
 }
+
 .works-header h1 {
   padding-bottom: 30px;
 }
+
 .works-wrapper {
   display: grid;
   grid-template-columns: auto;
