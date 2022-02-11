@@ -206,7 +206,7 @@
   align-items: center;
 }
 
-.work-title h2 {
+.work-title h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,6 +236,7 @@
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .view-work:hover {
