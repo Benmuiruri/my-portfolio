@@ -4,14 +4,13 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-.works,
-.about {
+.works,.about {
   padding: 20px 0;
   max-width: 327px;
 }
 
 .btn {
-  color: #ffffff;
+  color: #fff;
   align-items: center;
   padding: 12px;
   background: #36b37f;
@@ -24,6 +23,7 @@
   cursor: pointer;
   text-transform: capitalize;
 }
+
 .btn:hover {
   box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
 }
@@ -39,6 +39,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 /* Header styles */
 .top {
   height: 48px;
@@ -203,6 +204,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
 .social {
   margin: 0px 8px;
   display: flex;
@@ -214,7 +216,6 @@ main {
 }
 
 .work-tags a {
-  font-weight: 100;
   text-decoration: none;
   display: inline-block;
   width: 100%;
@@ -267,7 +268,7 @@ main {
 }
 
 .about-content > * {
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .about-content h2 {
@@ -279,8 +280,6 @@ main {
 }
 
 .about-content p {
-  font-size: 20px;
-  line-height: 32px;
   color: #42526e;
   font-size: 20px;
   font-weight: 400;
@@ -301,7 +300,7 @@ main {
   align-items: center;
   height: 352px;
   width: 100%;
-  margin: 10px 0px;
+  margin: 10px 0;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
@@ -309,7 +308,7 @@ main {
 }
 
 .skill-icon {
-  padding:  0 0 10px 0;
+  padding-bottom: 10px;
 }
 
 .about-skill h3 {
@@ -318,14 +317,15 @@ main {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  padding:  0 0 50px 0;
+  padding-bottom: 50px;
 }
 
 .skill-social {
   padding: 12px;
   border-radius: 8px;
-  background: #ffffff;
+  background: #fff;
 }
 .skill-social a {
   color: #36b37e;
 }
+
