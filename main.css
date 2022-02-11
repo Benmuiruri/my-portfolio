@@ -5,6 +5,43 @@
   font-family: "Inter", sans-serif;
 }
 
+.works,
+.about {
+  padding: 20px 0;
+  max-width: 327px;
+}
+
+.btn {
+  color: #fff;
+  align-items: center;
+  padding: 12px;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.btn:active {
+  background: #008552;
+  transform: translateY(2px);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header styles */
 .top {
   height: 48px;
@@ -45,16 +82,11 @@
   flex-direction: column;
 }
 
-.content {
-  padding: 24px;
-  display: flex;
-}
-
 /* Hero styles */
 
 .hero {
   width: 100%;
-  background-image: url(/assets/hero-image.png);
+  background-image: url(./assets/hero-image.png);
   background-size: cover;
   background-position: center;
 }
@@ -118,4 +150,206 @@
 
 .action a {
   font-size: 25px;
+}
+
+/* Works section styles */
+.works-header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
+  margin: 24px 0;
+  padding: 50px 0;
+  background-image: url(./assets/Frame.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.works-header h1 {
+  padding-bottom: 30px;
+}
+
+.works-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 5px;
+  grid-auto-flow: row;
+  width: 100%;
+  grid-gap: 20px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  max-width: 327px;
+}
+
+.work-image {
+  max-width: 327px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-image img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-tags ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  margin: 0 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
+.work-tags a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  color: #3a4a42;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.work-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-title h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  height: 57px;
+}
+
+.work-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 20px;
+}
+
+/* About me styles */
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/about-top-vector.png), url(./assets/about-bottom-vector.png);
+  background-position: top right, left bottom;
+  background-repeat: no-repeat;
+}
+
+.about-content > * {
+  margin: 24px 0;
+}
+
+.about-content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  height: 48px;
+  color: #172b4d;
+}
+
+.about-content p {
+  color: #42526e;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.about-skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+}
+
+.about-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 352px;
+  width: 100%;
+  margin: 10px 0;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.skill-icon {
+  padding-bottom: 10px;
+}
+
+.about-skill h3 {
+  color: #344563;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.skill-social {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.skill-social a {
+  color: #36b37e;
 }
