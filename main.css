@@ -355,6 +355,49 @@ main {
 }
 
 /* Footer Section */
-.footer-form ul {
-  list-style-type: none;
+.footer {
+background-color: orange;
+display: flex;
+flex-direction: column;
+}
+
+.footer .footer-text {
+ background-color: #42526e;
+ padding: 20px;
+ min-height: 200px;
+ height: auto;
+ margin: 58px 24px;
+}
+
+.footer .footer-text p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+  
+}
+
+.footer-form {
+  background-color: #008552;
+  padding: 20px;
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer-form input {
+  background: #FFFFFF;
+border: 1px solid #D0D9D4;
+box-sizing: border-box;
+border-radius: 4px;
+Width: 327px;
+Height: 48px;
+
 }
