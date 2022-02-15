@@ -422,5 +422,22 @@ form {
 }
 
 .submit-btn {
-  margin: 10px 5px;
+  margin: 5px;
+}
+
+.footer .socials {
+  margin-top: 0;
+}
+
+.footer .contact-email {
+  max-width: 327px;
+  height: 127px;
+}
+
+.footer .contact-email h4 {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+
 }
