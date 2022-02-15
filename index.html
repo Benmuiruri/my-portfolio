@@ -70,7 +70,7 @@
       <section class="works">
         <div class="works-header">
           <h1>My Recent Works</h1>
-          <img src="/assets/Indicator.png" alt="">
+          <img src="./assets/Indicator.png" alt="" />
         </div>
         <div class="works-wrapper">
           <div class="work-tile">
@@ -101,7 +101,7 @@
                 </ul>
               </div>
               <div class="work-button">
-                <button class="btn view-work">See Project</button>
+                <button class="btn view-work" type="button">See Project</button>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@
                 </ul>
               </div>
               <div class="work-button">
-                <button class="btn view-work">See Project</button>
+                <button class="btn view-work" type="button">See Project</button>
               </div>
             </div>
           </div>
@@ -162,7 +162,7 @@
                 </ul>
               </div>
               <div class="work-button">
-                <button class="btn view-work">See Project</button>
+                <button class="btn view-work" type="button">See Project</button>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@
                 </ul>
               </div>
               <div class="work-button">
-                <button class="btn view-work">See Project</button>
+                <button class="btn view-work" type="button">See Project</button>
               </div>
             </div>
           </div>
@@ -220,7 +220,7 @@
                 </ul>
               </div>
               <div class="work-button">
-                <button class="btn view-work">See Project</button>
+                <button class="btn view-work" type="button">See Project</button>
               </div>
             </div>
           </div>
@@ -249,7 +249,9 @@
                 </ul>
               </div>
               <div class="work-button">
-                <button class="btn view-work"><span>See project</span></button>
+                <button class="btn view-work" type="button">
+                  <span>See project</span>
+                </button>
               </div>
             </div>
           </div>
@@ -264,12 +266,12 @@
               some of my work and experience! If you like what you see and have
               a project you need coded, don't hestiate to contact me.
             </p>
-            <button class="btn my-resume">Get my resume</button>
+            <button class="btn my-resume" type="button">Get my resume</button>
           </div>
           <div class="about-skills-wrapper">
             <div class="about-skill">
               <div class="skill-icon">
-                <img src="/assets/icon-languages.png" alt="Languages">
+                <img src="./assets/icon-languages.png" alt="Languages" />
               </div>
               <h3>Languages</h3>
               <div class="work-tags">
@@ -288,7 +290,7 @@
             </div>
             <div class="about-skill">
               <div class="skill-icon">
-                <img src="/assets/icon-frameworks.png" alt="Frameworks">
+                <img src="./assets/icon-frameworks.png" alt="Frameworks" />
               </div>
               <h3>Frameworks</h3>
               <div class="work-tags">
@@ -310,7 +312,7 @@
             </div>
             <div class="about-skill">
               <div class="skill-icon">
-                <img src="/assets/icon-skills.png" alt="Skills">
+                <img src="./assets/icon-skills.png" alt="Skills" />
               </div>
               <h3>Skills</h3>
               <div class="work-tags">
@@ -333,6 +335,67 @@
           </div>
         </div>
       </section>
+      <footer class="footer">
+        <div class="footer-text">
+          <p>
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
+        </div>
+        <div class="footer-form">
+          <form action="https://formspree.io/f/myyoweka" method="post">
+            <input
+              type="text"
+              id="full-name"
+              name="user-full-name"
+              maxlength="30"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="user_email"
+              id="email"
+              required
+              placeholder="Email address"
+            />
+            <textarea
+              name="user-message"
+              id="user-message"
+              cols="30"
+              rows="10"
+              maxlength="500"
+              required
+              placeholder="Enter text here"
+            ></textarea>
+            <button type="submit" class="btn submit-btn">Get in touch</button>
+          </form>
+        </div>
+
+        <div class="socials">
+          <ul>
+            <li class="social-link">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="social-link">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li class="social-link">
+              <a href="#"><i class="fa-solid fa-m"></i></a>
+            </li>
+            <li class="social-link">
+              <a href="#"><i class="fa fa-github"></i></a>
+            </li>
+            <li class="social-link">
+              <a href="#"><i class="fa-brands fa-angellist"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-email">
+          <h4>ben@benkiarie.com</h4>
+        </div>
+        <img src="./assets/Shape.png" alt="bottom bar" class="footer-image"/>
+      </footer>
     </main>
   </body>
 </html>

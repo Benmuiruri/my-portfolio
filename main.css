@@ -286,7 +286,9 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(./assets/about-top-vector.png), url(./assets/about-bottom-vector.png);
+  background-image:
+    url(./assets/about-top-vector.png),
+    url(./assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
 }
@@ -352,4 +354,103 @@ main {
 
 .skill-social a {
   color: #36b37e;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 327px;
+  background-image: url(./assets/contact.png);
+  background-repeat: no-repeat;
+  background-position: 100% 75%;
+}
+
+.footer-text {
+  padding: 20px;
+  min-height: 200px;
+  height: auto;
+  margin: 10px 5px;
+}
+
+.footer-form {
+  margin: 10px 5px;
+}
+
+.footer-text p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+form {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-form input {
+  margin: 10px 5px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 327px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6b778c;
+  padding: 15px 16px;
+}
+
+.footer-form textarea {
+  margin: 10px 5px;
+  background: #fff;
+  color: #091e42;
+  border: 1px solid #36b37f;
+  padding: 12px;
+  border-radius: 4px;
+  width: 327px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.submit-btn {
+  margin: 10px 5px;
+}
+
+.footer .socials {
+  margin-top: 0;
+}
+
+.footer i {
+  color: #505f79;
+}
+
+.footer .contact-email {
+  max-width: 327px;
+  height: 127px;
+  margin-bottom: 140px;
+}
+
+.contact-email h4 {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+.footer-image {
+  width: 134px;
+  margin: 0 auto;
 }
