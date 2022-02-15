@@ -353,3 +353,8 @@ main {
 .skill-social a {
   color: #36b37e;
 }
+
+/* Footer Section */
+.footer-form ul {
+  list-style-type: none;
+}
