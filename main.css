@@ -360,6 +360,9 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 327px;
+  background-image: url(./assets/contact.png);
+  background-repeat: no-repeat;
+  background-position:  100% 75%;
 }
 
 .footer-text {
@@ -370,7 +373,7 @@ main {
 }
 
 .footer-form {
-  margin: 20px 5px;
+  margin: 10px 5px;
 }
 
 .footer-text p {
@@ -422,22 +425,31 @@ form {
 }
 
 .submit-btn {
-  margin: 5px;
+  margin: 10px 5px;
 }
 
 .footer .socials {
   margin-top: 0;
 }
 
+.footer i {
+  color: #505f79;
+}
+
 .footer .contact-email {
   max-width: 327px;
   height: 127px;
+  margin-bottom: 140px;
 }
 
-.footer .contact-email h4 {
+.contact-email h4 {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E;
+  color: #42526e;
+}
 
+footer img {
+  width: 134px;
+  margin: 0 auto;
 }
