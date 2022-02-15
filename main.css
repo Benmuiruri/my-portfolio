@@ -286,7 +286,8 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(./assets/about-top-vector.png),
+  background-image:
+    url(./assets/about-top-vector.png),
     url(./assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
@@ -362,7 +363,7 @@ main {
   max-width: 327px;
   background-image: url(./assets/contact.png);
   background-repeat: no-repeat;
-  background-position:  100% 75%;
+  background-position: 100% 75%;
 }
 
 .footer-text {
@@ -396,7 +397,7 @@ form {
 
 .footer-form input {
   margin: 10px 5px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
@@ -413,7 +414,7 @@ form {
 
 .footer-form textarea {
   margin: 10px 5px;
-  background: #ffffff;
+  background: #fff;
   color: #091e42;
   border: 1px solid #36b37f;
   padding: 12px;
@@ -449,7 +450,7 @@ form {
   color: #42526e;
 }
 
-footer img {
+.footer-image img {
   width: 134px;
   margin: 0 auto;
 }
