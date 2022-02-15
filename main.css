@@ -286,7 +286,8 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(./assets/about-top-vector.png), url(./assets/about-bottom-vector.png);
+  background-image: url(./assets/about-top-vector.png),
+    url(./assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
 }
@@ -356,35 +357,33 @@ main {
 
 /* Footer Section */
 .footer {
-background-color: orange;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  max-width: 327px;
 }
 
-.footer .footer-text {
- background-color: #42526e;
- padding: 20px;
- min-height: 200px;
- height: auto;
- margin: 58px 24px;
-}
-
-.footer .footer-text p {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172B4D;
-  
+.footer-text {
+  padding: 20px;
+  min-height: 200px;
+  height: auto;
+  margin: 10px 5px;
 }
 
 .footer-form {
-  background-color: #008552;
-  padding: 20px;
+  margin: 20px 5px;
+}
+
+.footer-text p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+form {
   height: auto;
-  min-height: 300px;
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -392,12 +391,36 @@ flex-direction: column;
   justify-content: center;
 }
 
-.footer .footer-form input {
-  background: #FFFFFF;
-border: 1px solid #D0D9D4;
-box-sizing: border-box;
-border-radius: 4px;
-Width: 327px;
-Height: 48px;
+.footer-form input {
+  margin: 10px 5px;
+  background: #ffffff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 327px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6b778c;
+  padding: 15px 16px;
+}
 
+.footer-form textarea {
+  margin: 10px 5px;
+  background: #ffffff;
+  color: #091e42;
+  border: 1px solid #36b37f;
+  padding: 12px;
+  border-radius: 4px;
+  width: 327px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.submit-btn {
+  margin: 10px 5px;
 }
