@@ -269,11 +269,9 @@ main {
 }
 @media screen and (min-width: 900px) {
   /* Page Styles */
-  .hero,
-  .works,
   .about,
   .footer-wrapper {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -318,9 +316,14 @@ main {
   }
 
   /* Hero Styles */
+  .hero {
+    background-image: none;
+    max-width: 40%;
+    margin: 0 auto;
+  }
   .content {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-image: url(./assets/hero-image.png);
     background-size: cover;
     background-position: center;
@@ -351,8 +354,12 @@ main {
 
   /* Works Styles */
   .works {
-    border: 1px solid salmon;
     width: 100%;
+  }
+
+  .projects-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .works-header {
