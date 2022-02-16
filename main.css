@@ -143,6 +143,7 @@ main {
 .action {
   display: flex;
   justify-content: center;
+  margin: 24px 0px;
 }
 
 .action a {
