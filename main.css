@@ -8,7 +8,6 @@
 .works,
 .about {
   padding: 20px 0;
-  max-width: 327px;
 }
 
 .btn {
@@ -107,7 +106,6 @@ main {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  max-width: 327px;
 }
 
 .hero-content p {
@@ -117,7 +115,6 @@ main {
   line-height: 28px;
   text-align: center;
   color: #172b4d;
-  max-width: 327px;
 }
 
 .hero-content span {
@@ -195,7 +192,6 @@ main {
 }
 
 .work-image {
-  max-width: 327px;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -360,7 +356,6 @@ main {
 .footer {
   display: flex;
   flex-direction: column;
-  max-width: 327px;
   background-image: url(./assets/contact.png);
   background-repeat: no-repeat;
   background-position: 100% 75%;
@@ -438,7 +433,6 @@ form {
 }
 
 .footer .contact-email {
-  max-width: 327px;
   height: 127px;
   margin-bottom: 140px;
 }
