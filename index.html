@@ -355,16 +355,20 @@
           </div>
         </div>
       </section>
-      <footer class="footer" id="contact">
-        <div class="footer-wrapper">
-          <div class="footer-text">
+      <section class="contact-form">
+        <div class="contact-form-wrapper">
+          <div class="contact-text">
             <p>
               I'm always interested in hearing about new projects, so if you'd
               like to chat please get in touch.
             </p>
           </div>
-          <div class="footer-form">
-            <form action="https://formspree.io/f/myyoweka" method="post">
+          <form
+            action="https://formspree.io/f/myyoweka"
+            method="post"
+            class="contact-form"
+          >
+            <fieldset>
               <input
                 type="text"
                 id="full-name"
@@ -389,13 +393,17 @@
                 required
                 placeholder="Enter text here"
               ></textarea>
-              <button type="submit" class="btn submit-btn">Get in touch</button>
-            </form>
-          </div>
+            </fieldset>
+            <button type="submit" class="btn submit-btn">Get in touch</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer" id="contact">
+        <div class="footer-wrapper">
           <div class="socials">
             <ul>
               <li class="social-link">
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-twitter footer-link"></i></a>
               </li>
               <li class="social-link">
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -413,9 +421,12 @@
           </div>
           <div class="contact-email">
             <h4>ben@benkiarie.com</h4>
-            <img src="./assets/Shape.png" alt="bottom bar" class="footer-image" />
+            <img
+              src="./assets/Shape.png"
+              alt="bottom bar"
+              class="footer-image"
+            />
           </div>
-          
         </div>
       </footer>
     </main>

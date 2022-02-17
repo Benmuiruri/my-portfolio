@@ -87,7 +87,7 @@ main {
 
 /* Hero Styles */
 .hero {
-  background-image: url(./assets/hero-image.png);
+  background-image: url(./assets/Header-llustration-desktop.png);
   background-size: 170%;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ main {
   align-items: center;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  max-width: 327px;
+  margin: 0 1em;
 }
 
 .work-image {
@@ -353,27 +353,21 @@ main {
   color: #36b37e;
 }
 
-/* Footer Section */
-.footer {
+/* Contact section styles */
+
+.contact-form-wrapper {
   display: flex;
   flex-direction: column;
-  background-image: url(./assets/contact.png);
-  background-repeat: no-repeat;
-  background-position: 100% 75%;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-text {
+.contact-text {
   padding: 20px;
-  min-height: 200px;
-  height: auto;
   margin: 10px 5px;
 }
 
-.footer-form {
-  margin: 10px 5px;
-}
-
-.footer-text p {
+.contact-text p {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -382,22 +376,29 @@ main {
   color: #172b4d;
 }
 
-form {
-  height: auto;
+.contact-form {
+  margin: 10px 5px;
   display: flex;
   flex-direction: column;
-  place-content: center;
   align-items: center;
-  justify-content: center;
+  background-image: url(./assets/contact.png);
+  background-repeat: no-repeat;
+  background-position: 100% 75%;
 }
 
-.footer-form input {
+.contact-form fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.contact-form input {
   margin: 10px 5px;
   background: #fff;
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 327px;
+  min-width: 327px;
   height: 48px;
   font-weight: 400;
   font-size: 15px;
@@ -408,14 +409,14 @@ form {
   padding: 15px 16px;
 }
 
-.footer-form textarea {
+.contact-form textarea {
   margin: 10px 5px;
   background: #fff;
   color: #091e42;
   border: 1px solid #36b37f;
   padding: 12px;
   border-radius: 4px;
-  width: 327px;
+  min-width: 327px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 500;
@@ -425,8 +426,13 @@ form {
   margin: 10px 5px;
 }
 
-.footer .socials {
-  margin: 0;
+/* Footer Section */
+.footer {
+  width: 100%;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer i {
@@ -436,7 +442,6 @@ form {
 .contact-email {
   text-align: center;
 }
-
 
 .contact-email h4 {
   font-size: 20px;
@@ -529,7 +534,7 @@ form {
     line-height: 32px;
     padding: 0;
   }
-  
+
   .action {
     margin: 2em 0;
   }
@@ -556,7 +561,7 @@ form {
 
   .works-wrapper {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
     padding: 5px;
     grid-auto-flow: row;
     width: 100%;
@@ -565,11 +570,15 @@ form {
     align-items: center;
   }
 
+  .work-tile {
+    width: 100%;
+  }
+
   /* About me styles */
   .about {
     background-image: url(./assets/about-right-web.png),
-      url(./assets/about-left-web.png);
-    background-position: top right, -10% 35%;
+      url(./assets/groups.png);
+    background-position: top right, 0% 35%;
     background-repeat: no-repeat;
   }
   .about-wrapper {
@@ -587,6 +596,7 @@ form {
 
   .about-skills-wrapper {
     flex-direction: row;
+    width: 100%;
   }
 
   .about-skill {
@@ -599,6 +609,69 @@ form {
     border-radius: 8px;
   }
 
-  /* Footer styles */ 
-  
+  /* Contact form styles */
+
+  .contact-form {
+    margin: 5em 0;
+    background-image: none;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .contact-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 80%;
+    align-items: center;
+  }
+
+  .contact-form input {
+    width: 40vw;
+  }
+
+  .contact-text p {
+    text-align: left;
+  }
+
+  /* Footer styles */
+  .footer {
+    padding: 1em 0;
+  }
+  .footer-wrapper {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .footer-text {
+    align-self: center;
+    /* width: 30%; */
+  }
+  .footer-text {
+    border: 1px solid aqua;
+    flex: 1 1 45%;
+  }
+  .footer-form {
+    display: flex;
+    border: 1px solid saddlebrown;
+    flex: 1 1 65%;
+  }
+
+  .form {
+    border: 1px solid gold;
+  }
+
+  .footer-form input {
+    width: 100%;
+  }
+
+  .footer .contact-email {
+    display: none;
+  }
+
+  .footer-image {
+    padding: 0;
+  }
+
+footer .social-link a {
+    font-size: 1.5em;
+  }
 }
