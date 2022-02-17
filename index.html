@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <script
@@ -19,10 +19,16 @@
     <title>Ben's Portfolio</title>
   </head>
   <body>
+    <!--Header section-->
     <header class="top">
       <nav class="flex-nav">
+        <ul class="web-header-menu">
+          <li><a href="#portfolio" class="web-header-link">porfolio</a></li>
+          <li><a href="#about" class="web-header-link">about</a></li>
+          <li><a href="#contact" class="web-header-link">contact</a></li>
+        </ul>
         <a href="#" class="logo-text"><span>Welcome</span></a>
-        <ul>
+        <ul class="mobile-header-menu">
           <li class="menu">
             <a href="#"><i class="fa-solid fa-bars"></i></a>
           </li>
@@ -30,6 +36,7 @@
       </nav>
     </header>
     <main class="wrapper">
+      <!--Hero section-->
       <section class="content">
         <div class="hero">
           <div class="hero-content">
@@ -62,207 +69,224 @@
               </ul>
             </div>
             <div class="action">
-              <a href="#"><i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#portfolio"><i class="fa-solid fa-chevron-down"></i></a>
             </div>
           </div>
         </div>
       </section>
-      <section class="works">
-        <div class="works-header">
-          <h1>My Recent Works</h1>
-          <img src="./assets/Indicator.png" alt="" />
-        </div>
-        <div class="works-wrapper">
-          <div class="work-tile">
-            <div class="work-image">
-              <img
-                src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
-                alt="My first project"
-              />
-            </div>
-            <div class="work-content">
-              <div class="work-title">
-                <h3>My First Project</h3>
-              </div>
-              <div class="work-tags">
-                <ul>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="work-button">
-                <button class="btn view-work" type="button">See Project</button>
-              </div>
-            </div>
+      <!--Works section-->
+      <section class="works" id="portfolio">
+        <div class="projects-wrapper">
+          <div class="works-header">
+            <h1>My Recent Works</h1>
+            <img src="./assets/Indicator.png" alt="" />
           </div>
-          <div class="work-tile">
-            <div class="work-image">
-              <img
-                src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
-                alt="My first project"
-              />
-            </div>
-            <div class="work-content">
-              <div class="work-title">
-                <h3>My First Project</h3>
+          <div class="works-wrapper">
+            <div class="work-tile">
+              <div class="work-image">
+                <img
+                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
+                  alt="My first project"
+                />
               </div>
-              <div class="work-tags">
-                <ul>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="work-button">
-                <button class="btn view-work" type="button">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="work-tile">
-            <div class="work-image">
-              <img
-                src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
-                alt="My first project"
-              />
-            </div>
-            <div class="work-content">
-              <div class="work-title">
-                <h3>My First Project</h3>
-              </div>
-              <div class="work-tags">
-                <ul>
-                  <li class="social">
-                    <a href="#"><span>HTML</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>Ruby</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>CSS</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>Javascript</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="work-button">
-                <button class="btn view-work" type="button">See Project</button>
+              <div class="work-content">
+                <div class="work-title">
+                  <h3>My First Project</h3>
+                </div>
+                <div class="work-tags">
+                  <ul>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-button">
+                  <button class="btn view-work" type="button">
+                    See Project
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="work-tile">
-            <div class="work-image">
-              <img
-                src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
-                alt="My first project"
-              />
-            </div>
-            <div class="work-content">
-              <div class="work-title">
-                <h3>My First Project</h3>
+            <div class="work-tile">
+              <div class="work-image">
+                <img
+                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
+                  alt="My first project"
+                />
               </div>
-              <div class="work-tags">
-                <ul>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="work-button">
-                <button class="btn view-work" type="button">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="work-tile">
-            <div class="work-image">
-              <img
-                src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
-                alt="My first project"
-              />
-            </div>
-            <div class="work-content">
-              <div class="work-title">
-                <h3>My First Project</h3>
-              </div>
-              <div class="work-tags">
-                <ul>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="work-button">
-                <button class="btn view-work" type="button">See Project</button>
+              <div class="work-content">
+                <div class="work-title">
+                  <h3>My First Project</h3>
+                </div>
+                <div class="work-tags">
+                  <ul>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-button">
+                  <button class="btn view-work" type="button">
+                    See Project
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="work-tile">
-            <div class="work-image">
-              <img
-                src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
-                alt="My first project"
-              />
+            <div class="work-tile">
+              <div class="work-image">
+                <img
+                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
+                  alt="My first project"
+                />
+              </div>
+              <div class="work-content">
+                <div class="work-title">
+                  <h3>My First Project</h3>
+                </div>
+                <div class="work-tags">
+                  <ul>
+                    <li class="social">
+                      <a href="#"><span>HTML</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>Ruby</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>CSS</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>Javascript</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-button">
+                  <button class="btn view-work" type="button">
+                    See Project
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="work-content">
-              <div class="work-title">
-                <h3>My First Project</h3>
+            <div class="work-tile">
+              <div class="work-image">
+                <img
+                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
+                  alt="My first project"
+                />
               </div>
-              <div class="work-tags">
-                <ul>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>html</span></a>
-                  </li>
-                  <li class="social">
-                    <a href="#"><span>Ruby on Rails</span></a>
-                  </li>
-                </ul>
+              <div class="work-content">
+                <div class="work-title">
+                  <h3>My First Project</h3>
+                </div>
+                <div class="work-tags">
+                  <ul>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-button">
+                  <button class="btn view-work" type="button">
+                    See Project
+                  </button>
+                </div>
               </div>
-              <div class="work-button">
-                <button class="btn view-work" type="button">
-                  <span>See project</span>
-                </button>
+            </div>
+            <div class="work-tile">
+              <div class="work-image">
+                <img
+                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
+                  alt="My first project"
+                />
+              </div>
+              <div class="work-content">
+                <div class="work-title">
+                  <h3>My First Project</h3>
+                </div>
+                <div class="work-tags">
+                  <ul>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-button">
+                  <button class="btn view-work" type="button">
+                    See Project
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="work-tile">
+              <div class="work-image">
+                <img
+                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
+                  alt="My first project"
+                />
+              </div>
+              <div class="work-content">
+                <div class="work-title">
+                  <h3>My First Project</h3>
+                </div>
+                <div class="work-tags">
+                  <ul>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>Ruby on Rails</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-button">
+                  <button class="btn view-work" type="button">
+                    <span>See project</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="about">
+      <!--About me section-->
+      <section class="about" id="about">
         <div class="about-wrapper">
           <div class="about-content">
             <h2>About me</h2>
             <p>
-              I can help you build a product , feature or website Look through
+              I can help you build a product, feature, or website Look through
               some of my work and experience! If you like what you see and have
               a project you need coded, don't hestiate to contact me.
             </p>
@@ -335,66 +359,81 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="footer-text">
-          <p>
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </p>
-        </div>
-        <div class="footer-form">
-          <form action="https://formspree.io/f/myyoweka" method="post">
-            <input
-              type="text"
-              id="full-name"
-              name="user-full-name"
-              maxlength="30"
-              placeholder="Full Name"
-              required
-            />
-            <input
-              type="email"
-              name="user_email"
-              id="email"
-              required
-              placeholder="Email address"
-            />
-            <textarea
-              name="user-message"
-              id="user-message"
-              cols="30"
-              rows="10"
-              maxlength="500"
-              required
-              placeholder="Enter text here"
-            ></textarea>
+      <!--Contact form section-->
+      <section class="contact">
+        <div class="contact-form-wrapper">
+          <div class="contact-text">
+            <h3>
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </h3>
+          </div>
+          <form
+            action="https://formspree.io/f/myyoweka"
+            method="post"
+            class="contact-form"
+          >
+            <fieldset>
+              <input
+                type="text"
+                id="full-name"
+                name="user-full-name"
+                maxlength="30"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="email"
+                name="user_email"
+                id="email"
+                required
+                placeholder="Email address"
+              />
+              <textarea
+                name="user-message"
+                id="user-message"
+                cols="30"
+                rows="5"
+                maxlength="500"
+                required
+                placeholder="Enter text here"
+              ></textarea>
+            </fieldset>
             <button type="submit" class="btn submit-btn">Get in touch</button>
           </form>
         </div>
-
-        <div class="socials">
-          <ul>
-            <li class="social-link">
-              <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="social-link">
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li class="social-link">
-              <a href="#"><i class="fa-solid fa-m"></i></a>
-            </li>
-            <li class="social-link">
-              <a href="#"><i class="fa fa-github"></i></a>
-            </li>
-            <li class="social-link">
-              <a href="#"><i class="fa-brands fa-angellist"></i></a>
-            </li>
-          </ul>
+      </section>
+      <!--Footer section-->
+      <footer class="footer" id="contact">
+        <div class="footer-wrapper">
+          <div class="socials">
+            <ul>
+              <li class="social-link">
+                <a href="#"><i class="fa fa-twitter footer-link"></i></a>
+              </li>
+              <li class="social-link">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li class="social-link">
+                <a href="#"><i class="fa-solid fa-m"></i></a>
+              </li>
+              <li class="social-link">
+                <a href="#"><i class="fa fa-github"></i></a>
+              </li>
+              <li class="social-link">
+                <a href="#"><i class="fa-brands fa-angellist"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-email">
+            <p>ben@benkiarie.com</p>
+            <img
+              src="./assets/Shape.png"
+              alt="bottom bar"
+              class="footer-image"
+            />
+          </div>
         </div>
-        <div class="contact-email">
-          <h4>ben@benkiarie.com</h4>
-        </div>
-        <img src="./assets/Shape.png" alt="bottom bar" class="footer-image"/>
       </footer>
     </main>
   </body>
