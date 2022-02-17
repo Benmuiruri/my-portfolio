@@ -448,7 +448,7 @@ main {
 
 /* Desktop view styles */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
   /* Header Styles */
   .top {
     margin-top: 1em;
