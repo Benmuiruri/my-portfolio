@@ -371,6 +371,13 @@ main {
   text-align: center;
   color: #172b4d;
 }
+.shimmer {
+  transition: transform 2s;
+}
+
+.shimmer:hover {
+  transform: translate(10px);
+}
 
 .contact-form {
   margin: 10px 5px;
@@ -631,15 +638,6 @@ main {
 
   .contact-text {
     align-self: center;
-  }
-
-  .contact-text h3 {
-    text-align: left;
-    transition: transform 2s;
-  }
-
-  .contact-text h3:hover {
-    transform: translate(10px);
   }
 
   /* Footer styles */
