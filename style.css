@@ -184,6 +184,11 @@ main {
   margin: 0 1em;
 }
 
+.work-tile :hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
 .work-image {
   display: flex;
   justify-content: center;
