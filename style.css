@@ -184,6 +184,11 @@ main {
   margin: 0 1em;
 }
 
+.work-tile :hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
 .work-image {
   display: flex;
   justify-content: center;
@@ -366,6 +371,14 @@ main {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+}
+
+.shimmer {
+  transition: transform 2s;
+}
+
+.shimmer:hover {
+  transform: translate(10px);
 }
 
 .contact-form {
@@ -630,10 +643,6 @@ main {
 
   .contact-text {
     align-self: center;
-  }
-
-  .contact-text h3 {
-    text-align: left;
   }
 
   /* Footer styles */
