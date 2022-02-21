@@ -1,16 +1,20 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+<p align="center">Desktop view</p>
 <img src="./assets/desktop.png">
+
+<p align="center"> Mobile view</p>
 <img src="./assets/mobile.png"> 
 
 <h1 align="center"> My Portlio Website </h1>
 
-> This is my personal portfolio that I will be updating as I build Projects. 
-> Browse through my projects and reach out to me for any collaboration
+> This is a repository for my personal portfolio that I will be updating with the Projects I build. 
+> Visit my [Portfolio Website](https://www.benkiarie.live/my-portfolio/) to view my projects.
+> Reach out to me for any collaboration. 
 
 ## Built With
 
-- HTML and CSS
+- **HTML** and **CSS**
 
 ## Getting Started
 
