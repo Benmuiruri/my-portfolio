@@ -9,7 +9,7 @@
 <h1 align="center"> My Portlio Website </h1>
 
 > This is a repository for my personal portfolio that I will be updating with the Projects I build. 
-> Visit my [Portfolio Website](https://www.benkiarie.live/my-portfolio/) to view my projects.
+> Visit my [Portfolio Website](https://benmuiruri.github.io/my-portfolio/) to view my projects.
 > Reach out to me for any collaboration. 
 
 ## Built With
