@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-<img src="./assets/desktop">
-<img src="./assets/mobile"> 
+<img src="./assets/desktop.png">
+<img src="./assets/mobile.png"> 
 
 <h1 align="center"> My Portlio Website </h1>
 
