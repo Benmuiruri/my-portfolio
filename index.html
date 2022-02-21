@@ -9,15 +9,6 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-X3H9YPFKGC"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-X3H9YPFKGC");
-    </script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,6 +23,15 @@
     ></script>
     <title>Ben's Portfolio</title>
   </head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "GA_MEASUREMENT_ID", { send_page_view: false });
+    gtag("config", "G-X3H9YPFKGC");
+  </script>
   <body>
     <!--Header section-->
     <header class="top">
