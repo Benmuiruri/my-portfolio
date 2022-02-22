@@ -45,7 +45,6 @@ main {
   transform: translateY(2px);
 }
 
-
 /* Header Styles */
 .top {
   height: 48px;
@@ -86,36 +85,35 @@ main {
 
 /* Hero Styles */
 .hero {
-  background-image: url(./assets/mobile-header-background.png);
-  background-repeat: no-repeat;
-}
-
-.hero-content {
   margin-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(./assets/hero-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content > * {
+  text-align: center;
+  color: #172b4d;
+  margin: 24px;
 }
 
 .hero-content h1 {
-  padding: 10px;
+  padding: 2em 0 0;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  text-align: center;
-  color: #172b4d;
-  margin: 24px 0;
 }
 
 .hero-content p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
-  color: #172b4d;
-  margin: 24px 0;
-  padding: 0 20px;
+  padding: 1em 0 3em;
 }
 
 .hero-content span {
@@ -190,14 +188,13 @@ main {
 
 .work-tile:hover {
   transition: 0.5s;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .work-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .work-image img {
@@ -220,14 +217,10 @@ main {
 .work-tags ul {
   list-style: none;
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.work-tags {
-  display: flex;
-  justify-content: space-between;
 }
 
 .social {
@@ -291,8 +284,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image:
-    url(./assets/about-top-vector.png),
+  background-image: url(./assets/about-top-vector.png),
     url(./assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
@@ -468,7 +460,12 @@ main {
   padding-top: 10em;
   margin: 0 auto;
 }
-
+/* Tab view styles */
+@media screen and (min-width: 950px) {
+  .hero-content {
+    background-image: none;
+  }
+}
 /* Desktop view styles */
 
 @media screen and (min-width: 950px) {
@@ -523,13 +520,13 @@ main {
     width: 100%;
     height: 100vh;
     background-image: url(./assets/hero-image.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   .hero-content {
-    margin-top: 10em;
+    margin-top:3em;
   }
 
   .hero-content h1 {
@@ -555,7 +552,7 @@ main {
   }
 
   .projects-wrapper {
-    max-width: 70%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -582,15 +579,14 @@ main {
 
   /* About me styles */
   .about {
-    background-image:
-      url(./assets/about-right-web.png),
+    background-image: url(./assets/about-right-web.png),
       url(./assets/groups.png);
     background-position: top right, 0% 35%;
     background-repeat: no-repeat;
   }
 
   .about-wrapper {
-    max-width: 70%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -600,7 +596,7 @@ main {
   }
 
   .about-content p {
-    max-width: 50%;
+    width: 50%;
   }
 
   .about-skills-wrapper {
@@ -622,10 +618,8 @@ main {
 
   .contact {
     width: 100%;
-    background-image:
-      url(./assets/contact-right.png),
-      url(./assets/contact-center.png),
-      url(./assets/contact-left.png);
+    background-image: url(./assets/contact-right.png),
+      url(./assets/contact-center.png), url(./assets/contact-left.png);
     background-position: 100% 80%, 25% 95%, bottom left;
     background-repeat: no-repeat;
   }
@@ -634,7 +628,7 @@ main {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    max-width: 70%;
+    width: 70%;
     align-items: center;
     padding: 5em 0 10em;
   }
