@@ -188,20 +188,26 @@ main {
   margin: 0 1em;
 }
 
-.work-tile :hover {
-  opacity: 0.8;
+.work-tile:hover {
   transition: 0.5s;
+  transform: scale(1.05); 
 }
 
 .work-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .work-image img {
   width: 100%;
   cursor: pointer;
+  opacity: 0.7;
+}
+
+.work-image img:hover {
+  opacity: 1;
 }
 
 .work-content {
@@ -572,10 +578,6 @@ main {
     grid-gap: 20px 20px;
     justify-content: center;
     align-items: center;
-  }
-
-  .work-tile {
-    width: 100%;
   }
 
   /* About me styles */
