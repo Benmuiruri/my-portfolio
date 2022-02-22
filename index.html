@@ -17,14 +17,19 @@
       crossorigin="anonymous"
     ></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3H9YPFKGC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X3H9YPFKGC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-X3H9YPFKGC');
-  </script>
+      gtag("config", "G-X3H9YPFKGC");
+    </script>
     <title>Ben's Portfolio</title>
   </head>
   <body>
@@ -104,6 +109,12 @@
                 </div>
                 <div class="work-tags">
                   <ul>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
+                    <li class="social">
+                      <a href="#"><span>html</span></a>
+                    </li>
                     <li class="social">
                       <a href="#"><span>html</span></a>
                     </li>
@@ -412,38 +423,34 @@
           </form>
         </div>
       </section>
-      <!--Footer section-->
-      <footer class="footer" id="contact">
-        <div class="footer-wrapper">
-          <div class="socials">
-            <ul>
-              <li class="social-link">
-                <a href="#"><i class="fa fa-twitter footer-link"></i></a>
-              </li>
-              <li class="social-link">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </li>
-              <li class="social-link">
-                <a href="#"><i class="fa-solid fa-m"></i></a>
-              </li>
-              <li class="social-link">
-                <a href="#"><i class="fa fa-github"></i></a>
-              </li>
-              <li class="social-link">
-                <a href="#"><i class="fa-brands fa-angellist"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="contact-email">
-            <p>ben@benkiarie.com</p>
-            <img
-              src="./assets/Shape.png"
-              alt="bottom bar"
-              class="footer-image"
-            />
-          </div>
-        </div>
-      </footer>
     </main>
+    <!--Footer section-->
+    <footer class="footer" id="contact">
+      <div class="footer-wrapper">
+        <div class="socials">
+          <ul>
+            <li class="social-link">
+              <a href="#"><i class="fa fa-twitter footer-link"></i></a>
+            </li>
+            <li class="social-link">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li class="social-link">
+              <a href="#"><i class="fa-solid fa-m"></i></a>
+            </li>
+            <li class="social-link">
+              <a href="#"><i class="fa fa-github"></i></a>
+            </li>
+            <li class="social-link">
+              <a href="#"><i class="fa-brands fa-angellist"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-email">
+          <p>ben@benkiarie.com</p>
+          <img src="./assets/Shape.png" alt="bottom bar" class="footer-image" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
