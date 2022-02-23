@@ -169,20 +169,20 @@ main {
 
 .works-wrapper {
   display: grid;
-  grid-template-columns: auto;
-  padding: 5px;
-  grid-auto-flow: row;
-  width: 100%;
+  /* grid-template-columns: auto; */
+  /* padding: 5px; */
+  /* grid-auto-flow: row; */
+  /* width: 100%; */
   grid-gap: 20px 20px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .work-tile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   margin: 0 1em;
@@ -194,9 +194,9 @@ main {
 }
 
 .work-image {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .work-image img {
@@ -212,24 +212,24 @@ main {
 .work-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .work-tags ul {
   list-style: none;
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
 }
 
 .social {
   margin: 6px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
   padding: 8px 12px;
   background: #ebf0ee;
   border-radius: 4px;
@@ -237,7 +237,7 @@ main {
 
 .work-tags a {
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
   color: #3a4a42;
   font-weight: 600;
@@ -247,21 +247,20 @@ main {
 }
 
 .work-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .work-title h3 {
   color: #3a4a42;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   height: 57px;
+  padding-top: 10px;
 }
 
 .work-button {
@@ -574,12 +573,16 @@ main {
   .works-wrapper {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    padding: 5px;
-    grid-auto-flow: row;
-    width: 100%;
-    grid-gap: 20px 20px;
-    justify-content: center;
-    align-items: center;
+    /* padding: 5px; */
+    /* grid-auto-flow: row; */
+    /* width: 100%; */
+    /* grid-gap: 20px 20px; */
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .work-tile {
+    margin: 0;
   }
 
   /* About me styles */
