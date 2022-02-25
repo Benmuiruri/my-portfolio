@@ -169,11 +169,16 @@ main {
 
 .works-wrapper {
   display: grid;
+
   /* grid-template-columns: auto; */
+
   /* padding: 5px; */
+
   /* grid-auto-flow: row; */
+
   /* width: 100%; */
   grid-gap: 20px 20px;
+
   /* justify-content: center; */
   align-items: center;
 }
@@ -266,7 +271,8 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(./assets/about-top-vector.png),
+  background-image:
+    url(./assets/about-top-vector.png),
     url(./assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
@@ -564,7 +570,8 @@ main {
 
   /* About me styles */
   .about {
-    background-image: url(./assets/about-right-web.png),
+    background-image:
+      url(./assets/about-right-web.png),
       url(./assets/groups.png);
     background-position: top right, 0% 35%;
     background-repeat: no-repeat;
@@ -603,8 +610,10 @@ main {
 
   .contact {
     width: 100%;
-    background-image: url(./assets/contact-right.png),
-      url(./assets/contact-center.png), url(./assets/contact-left.png);
+    background-image:
+      url(./assets/contact-right.png),
+      url(./assets/contact-center.png),
+      url(./assets/contact-left.png);
     background-position: 100% 80%, 25% 95%, bottom left;
     background-repeat: no-repeat;
   }
