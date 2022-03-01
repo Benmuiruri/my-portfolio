@@ -9,7 +9,7 @@ const navLinks = document.querySelectorAll('.web-header-link');
 openModal.addEventListener('click', function () {
   const modalId = this.dataset.open;
   document.getElementById(modalId).classList.add(isVisible);
-  document.body.style.overflow = 'auto';
+  document.body.style.overflow = 'hidden';
 });
 
 // add event listener on x button to close modal and enable scroll
