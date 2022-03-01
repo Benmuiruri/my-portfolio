@@ -85,9 +85,9 @@ main {
   display: inline-block;
 }
 
-/* Modal styles */
+/* Nav Modal styles */
 
-.modal {
+header .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -104,12 +104,12 @@ main {
   transition: all 0.35s ease-in;
 }
 
-.modal.is-visible {
+header .modal.is-visible {
   visibility: visible;
   opacity: 1;
 }
 
-.modal-dialog {
+header .modal-dialog {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -124,7 +124,7 @@ main {
   flex-direction: column;
 }
 
-.modal-nav-links {
+header .modal-nav-links {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -132,7 +132,7 @@ main {
   padding-left: 2em;
 }
 
-.web-header-link {
+header .web-header-link {
   text-decoration: none;
   font-family: Inter, sans-serif;
   text-transform: capitalize;
@@ -144,7 +144,7 @@ main {
   color: #3a4a42;
 }
 
-.close-modal {
+header .close-modal {
   cursor: pointer;
   background: transparent;
   border: none;
@@ -154,7 +154,7 @@ main {
   font-size: 2em;
 }
 
-.modal-footer-image {
+header .modal-footer-image {
   margin-bottom: 0.5em;
 }
 
@@ -334,6 +334,96 @@ main {
   margin: 30px 0 20px;
 }
 
+/* Work detail modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 5px;
+  background: #fff;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+.modal-dialog h2 {
+  background-color: rebeccapurple;
+}
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[data-animation] .modal-dialog {
+  opacity: 0;
+  transition: all 0.5s var(--bounceEasing);
+}
+
+[data-animation].is-visible .modal-dialog {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+[data-animation='slideInOutDown'] .modal-dialog {
+  transform: translateY(100%);
+}
+
+[data-animation='slideInOutTop'] .modal-dialog {
+  transform: translateY(-100%);
+}
+
+[data-animation='slideInOutLeft'] .modal-dialog {
+  transform: translateX(-100%);
+}
+
+[data-animation='slideInOutRight'] .modal-dialog {
+  transform: translateX(100%);
+}
+
+[data-animation='zoomInOut'] .modal-dialog {
+  transform: scale(0.2);
+}
+
+[data-animation='rotateInOutDown'] .modal-dialog {
+  transform-origin: top left;
+  transform: rotate(-1turn);
+}
+
+[data-animation='mixInAnimations'].is-visible .modal-dialog {
+  animation: mixInAnimations 2s 0.2s linear forwards;
+}
+
+[data-animation='slideInOutDown'].is-visible .modal-dialog,
+[data-animation='slideInOutTop'].is-visible .modal-dialog,
+[data-animation='slideInOutLeft'].is-visible .modal-dialog,
+[data-animation='slideInOutRight'].is-visible .modal-dialog,
+[data-animation='zoomInOut'].is-visible .modal-dialog,
+[data-animation='rotateInOutDown'].is-visible .modal-dialog {
+  transform: none;
+}
+
 /* About me styles */
 
 .about-wrapper {
@@ -349,8 +439,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image:
-    url(../assets/about-top-vector.png),
+  background-image: url(../assets/about-top-vector.png),
     url(../assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
@@ -654,8 +743,7 @@ main {
 
   /* About me styles */
   .about {
-    background-image:
-      url(../assets/about-right-web.png),
+    background-image: url(../assets/about-right-web.png),
       url(../assets/groups.png);
     background-position: top right, 0% 35%;
     background-repeat: no-repeat;
@@ -694,10 +782,8 @@ main {
 
   .contact {
     width: 100%;
-    background-image:
-      url(../assets/contact-right.png),
-      url(../assets/contact-center.png),
-      url(../assets/contact-left.png);
+    background-image: url(../assets/contact-right.png),
+      url(../assets/contact-center.png), url(../assets/contact-left.png);
     background-position: 100% 80%, 25% 95%, bottom left;
     background-repeat: no-repeat;
   }

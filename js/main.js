@@ -1,23 +1,35 @@
 // get elements from html
 
-const openModal = document.querySelector('#mobile-menu');
-const closeModal = document.querySelector('#close-menu');
+const openEls = document.querySelectorAll('[data-open]');
+const closeEls = document.querySelectorAll('[data-close]');
 const isVisible = 'is-visible';
 const navLinks = document.querySelectorAll('.web-header-link');
 
-// add event listener to the hamburger menu, add make modal visible on page and disable scroll
-openModal.addEventListener('click', function () {
-  const modalId = this.dataset.open;
-  document.getElementById(modalId).classList.add(isVisible);
-  document.body.style.overflow = 'hidden';
-});
+const div = document.createElement('div');
+div.id = 'projectOne';
+div.className = 'modal';
+const insideDiv = document.createElement('div');
+insideDiv.className = 'modal-dialog';
+div.appendChild(insideDiv);
+const h2 = document.createElement('h2');
+h2.textContent = 'Add h2 element to the div';
+insideDiv.appendChild(h2);
+document.body.appendChild(div);
 
-// add event listener on x button to close modal and enable scroll
-closeModal.addEventListener('click', function () {
-  this.parentElement.parentElement.classList.remove(isVisible);
-  document.body.style.overflow = 'auto';
-});
+for (const el of openEls) {
+  el.addEventListener('click', function () {
+    const modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+    document.body.style.overflow = 'hidden';
+  });
+}
 
+for (const el of closeEls) {
+  el.addEventListener('click', function () {
+    this.parentElement.parentElement.classList.remove(isVisible);
+    document.body.style.overflow = 'auto';
+  });
+}
 // add event listener on click outside modal to close modal and enable scroll
 document.addEventListener('click', (e) => {
   if (e.target === document.querySelector('.modal.is-visible')) {
