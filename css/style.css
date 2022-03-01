@@ -3,11 +3,11 @@
 /* Global styles */
 * {
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  font: normal 100% "Inter", sans-serif;
+  font: normal 100% 'Inter', sans-serif;
   min-height: 100vh;
   min-width: 375px;
   display: flex;
@@ -56,13 +56,13 @@ main {
   display: none;
 }
 
-.flex-nav {
+.mobile-header-nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
 
-.flex-nav ul {
+.mobile-header-nav ul {
   list-style: none;
   align-self: center;
 }
@@ -271,8 +271,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image:
-    url(../assets/about-top-vector.png),
+  background-image: url(../assets/about-top-vector.png),
     url(../assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
@@ -468,8 +467,10 @@ main {
     align-items: center;
   }
 
-  .mobile-header-menu,
-  .logo-text {
+  .mobile-open-menu,
+  .logo-text,
+  .mobile-header-nav,
+  .modal {
     display: none;
   }
 
@@ -497,6 +498,10 @@ main {
     display: inline-block;
     text-align: center;
     text-transform: capitalize;
+  }
+
+  .close {
+    display: none;
   }
 
   /* Hero Styles */
@@ -570,8 +575,7 @@ main {
 
   /* About me styles */
   .about {
-    background-image:
-      url(../assets/about-right-web.png),
+    background-image: url(../assets/about-right-web.png),
       url(../assets/groups.png);
     background-position: top right, 0% 35%;
     background-repeat: no-repeat;
@@ -610,10 +614,8 @@ main {
 
   .contact {
     width: 100%;
-    background-image:
-      url(../assets/contact-right.png),
-      url(../assets/contact-center.png),
-      url(../assets/contact-left.png);
+    background-image: url(../assets/contact-right.png),
+      url(../assets/contact-center.png), url(../assets/contact-left.png);
     background-position: 100% 80%, 25% 95%, bottom left;
     background-repeat: no-repeat;
   }

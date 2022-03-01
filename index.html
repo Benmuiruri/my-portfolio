@@ -11,9 +11,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-X3H9YPFKGC");
+      gtag('config', 'G-X3H9YPFKGC');
     </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,19 +35,61 @@
   <body>
     <!--Header section-->
     <header class="top">
-      <nav class="flex-nav">
+      <nav class="web-nav">
         <ul class="web-header-menu">
-          <li><a href="#portfolio" class="web-header-link">porfolio</a></li>
-          <li><a href="#about" class="web-header-link">about</a></li>
-          <li><a href="#contact" class="web-header-link">contact</a></li>
-        </ul>
-        <a href="#" class="logo-text"><span>Welcome</span></a>
-        <ul class="mobile-header-menu">
-          <li class="menu">
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          <li>
+            <a href="#portfolio" class="web-header-link">porfolio</a>
+          </li>
+          <li>
+            <a href="#about" class="web-header-link">about</a>
+          </li>
+          <li>
+            <a href="#contact" class="web-header-link">contact</a>
           </li>
         </ul>
       </nav>
+      <nav class="mobile-header-nav">
+        <a href="#" class="logo-text"><span>Welcome</span></a>
+        <ul class="mobile-header-menu">
+          <li class="menu">
+            <a href="#"
+              ><i
+                class="fa-solid fa-bars open-modal"
+                data-open="nav-modal"
+                id="mobile-menu"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="modal" id="nav-modal" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <button
+            class="close-modal"
+            aria-label="close modal"
+            id="close-menu"
+            data-close
+          >
+            ✕
+          </button>
+          <ul class="modal-nav-links">
+            <li>
+              <a href="#portfolio" class="web-header-link">porfolio</a>
+            </li>
+            <li>
+              <a href="#about" class="web-header-link">about</a>
+            </li>
+            <li>
+              <a href="#contact" class="web-header-link">contact</a>
+            </li>
+          </ul>
+        </div>
+        <img
+          src="./assets/Shape.png"
+          alt="bottom bar"
+          class="modal-footer-image"
+        />
+      </div>
     </header>
     <main class="wrapper">
       <!--Hero section-->
@@ -117,53 +159,22 @@
                 <div class="work-tags">
                   <ul>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="work-button">
-                  <button class="btn view-work" type="button">
-                    See Project
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="work-tile">
-              <div class="work-image">
-                <img
-                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
-                  alt="My first project"
-                />
-              </div>
-              <div class="work-content">
-                <div class="work-title">
-                  <h3>My First Project</h3>
-                </div>
-                <div class="work-tags">
-                  <ul>
-                    <li class="social">
-                      <a href="#">html></a>
-                    </li>
-                    <li class="social">
-                      <a href="#">html></a>
-                    </li>
-                    <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">html</a>
                     </li>
                   </ul>
                 </div>
@@ -188,16 +199,13 @@
                 <div class="work-tags">
                   <ul>
                     <li class="social">
-                      <a href="#">HTML></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">Ruby></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">CSS></a>
-                    </li>
-                    <li class="social">
-                      <a href="#">Javascript></a>
+                      <a href="#">html</a>
                     </li>
                   </ul>
                 </div>
@@ -222,47 +230,16 @@
                 <div class="work-tags">
                   <ul>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">HTML</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">Ruby</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="work-button">
-                  <button class="btn view-work" type="button">
-                    See Project
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="work-tile">
-              <div class="work-image">
-                <img
-                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
-                  alt="My first project"
-                />
-              </div>
-              <div class="work-content">
-                <div class="work-title">
-                  <h3>My First Project</h3>
-                </div>
-                <div class="work-tags">
-                  <ul>
-                    <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">CSS</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
-                    </li>
-                    <li class="social">
-                      <a href="#">html></a>
-                    </li>
-                    <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">Javascript</a>
                     </li>
                   </ul>
                 </div>
@@ -287,13 +264,78 @@
                 <div class="work-tags">
                   <ul>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">html></a>
+                      <a href="#">html</a>
                     </li>
                     <li class="social">
-                      <a href="#">Ruby on Rails></a>
+                      <a href="#">html</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-button">
+                  <button class="btn view-work" type="button">
+                    See Project
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="work-tile">
+              <div class="work-image">
+                <img
+                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
+                  alt="My first project"
+                />
+              </div>
+              <div class="work-content">
+                <div class="work-title">
+                  <h3>My First Project</h3>
+                </div>
+                <div class="work-tags">
+                  <ul>
+                    <li class="social">
+                      <a href="#">html</a>
+                    </li>
+                    <li class="social">
+                      <a href="#">html</a>
+                    </li>
+                    <li class="social">
+                      <a href="#">html</a>
+                    </li>
+                    <li class="social">
+                      <a href="#">html</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-button">
+                  <button class="btn view-work" type="button">
+                    See Project
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="work-tile">
+              <div class="work-image">
+                <img
+                  src="https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg"
+                  alt="My first project"
+                />
+              </div>
+              <div class="work-content">
+                <div class="work-title">
+                  <h3>My First Project</h3>
+                </div>
+                <div class="work-tags">
+                  <ul>
+                    <li class="social">
+                      <a href="#">html</a>
+                    </li>
+                    <li class="social">
+                      <a href="#">html</a>
+                    </li>
+                    <li class="social">
+                      <a href="#">Ruby on Rails</a>
                     </li>
                   </ul>
                 </div>
@@ -328,13 +370,13 @@
               <div class="work-tags">
                 <ul>
                   <li class="social skill-social">
-                    <a href="#">Bootstrap></a>
+                    <a href="#">Bootstrap</a>
                   </li>
                   <li class="social skill-social">
-                    <a href="#">html></a>
+                    <a href="#">html</a>
                   </li>
                   <li class="social skill-social">
-                    <a href="#">Javascript></a>
+                    <a href="#">Javascript</a>
                   </li>
                 </ul>
               </div>
@@ -347,10 +389,10 @@
               <div class="work-tags">
                 <ul>
                   <li class="social skill-social">
-                    <a href="#">Codekit></a>
+                    <a href="#">Codekit</a>
                   </li>
                   <li class="social skill-social">
-                    <a href="#">Javascript></a>
+                    <a href="#">Javascript</a>
                   </li>
                   <li class="social skill-social">
                     <a href="#">RSpec</a>
@@ -465,5 +507,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
