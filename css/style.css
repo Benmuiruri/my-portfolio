@@ -121,7 +121,6 @@ main {
   margin-bottom: 2em;
   padding-top: 1em;
   display: flex;
-  width: 100%;
   flex-direction: column;
 }
 
@@ -150,12 +149,8 @@ main {
   background: transparent;
   border: none;
   outline: none;
-  font-size: inherit;
   align-self: end;
   padding: 1em;
-}
-
-.close-modal {
   font-size: 1.5rem;
 }
 
@@ -173,10 +168,6 @@ main {
 [data-animation].is-visible .modal-dialog {
   opacity: 1;
   transition-delay: 0.2s;
-}
-
-[data-animation='slideInOutRight'] .modal-dialog {
-  transform: translateX(100%);
 }
 
 [data-animation='slideInOutRight'].is-visible .modal-dialog {
@@ -369,7 +360,8 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(../assets/about-top-vector.png),
+  background-image:
+    url(../assets/about-top-vector.png),
     url(../assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
@@ -673,7 +665,8 @@ main {
 
   /* About me styles */
   .about {
-    background-image: url(../assets/about-right-web.png),
+    background-image:
+      url(../assets/about-right-web.png),
       url(../assets/groups.png);
     background-position: top right, 0% 35%;
     background-repeat: no-repeat;
@@ -712,8 +705,10 @@ main {
 
   .contact {
     width: 100%;
-    background-image: url(../assets/contact-right.png),
-      url(../assets/contact-center.png), url(../assets/contact-left.png);
+    background-image:
+      url(../assets/contact-right.png),
+      url(../assets/contact-center.png),
+      url(../assets/contact-left.png);
     background-position: 100% 80%, 25% 95%, bottom left;
     background-repeat: no-repeat;
   }
