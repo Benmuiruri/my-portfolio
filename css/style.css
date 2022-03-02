@@ -777,12 +777,15 @@ header .close-modal {
 
   .modal-dialog .close-proj-modal {
     position: absolute;
-    top: 1%;
-    right: 2%;
-    outline: auto;
+    top: 2%;
+    right: 2.5%;
+    /* outline: auto; */
     background: #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 4px;
+    font-size: 12px;
+    padding: 6px;
+    color: #67798e;
   }
 
   .modal-dialog .work-image {
