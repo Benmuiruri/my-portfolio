@@ -356,7 +356,7 @@ header .close-modal {
 
 /* Work detail modal styles */
 .modal-dialog .work-image img {
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
 .modal-dialog .close-proj-modal {
@@ -778,8 +778,7 @@ header .close-modal {
   .modal-dialog .close-proj-modal {
     position: absolute;
     top: 2%;
-    right: 2.5%;
-    /* outline: auto; */
+    right: 2%;
     background: #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 4px;
