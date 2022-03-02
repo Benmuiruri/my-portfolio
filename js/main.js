@@ -72,9 +72,10 @@ const projects = [project1, project2, project3, project4, project5, project6];
 
 const openEls = document.querySelectorAll('[data-open]');
 const closeEls = document.querySelectorAll('[data-close]');
+const openElems = Array.from(openEls);
+const closeElems = Array.from(closeEls);
 const isVisible = 'is-visible';
 const navLinks = document.querySelectorAll('.web-header-link');
-// const closeProjectModal = document.querySelector('#close-project-modal');
 
 // Create work detail html elements
 function modal(number) {
@@ -126,9 +127,7 @@ function modal(number) {
   });
   // Create paragraph div
   const projectTextDiv = document.createElement('div');
-  const projectText = document.createTextNode(
-    `${projects[number].description}`
-  );
+  const projectText = document.createTextNode(`${projects[number].description}`);
   projectTextDiv.className = 'project-text';
   projectTextDiv.appendChild(projectText);
   insideDiv.appendChild(projectTextDiv);
@@ -176,22 +175,20 @@ function modal(number) {
   });
 }
 
-// Open modal
-for (const el of openEls) {
+openElems.forEach((el) => {
   el.addEventListener('click', function () {
     const modalId = this.dataset.open;
     document.getElementById(modalId).classList.add(isVisible);
     document.body.style.overflow = 'hidden';
   });
-}
-
+});
 // Close modal
-for (const el of closeEls) {
+closeElems.forEach((el) => {
   el.addEventListener('click', function () {
     this.parentElement.parentElement.classList.remove(isVisible);
     document.body.style.overflow = 'auto';
   });
-}
+});
 
 // add event listener on click outside modal to close modal and enable scroll
 document.addEventListener('click', (e) => {
