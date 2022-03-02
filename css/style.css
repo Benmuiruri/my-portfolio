@@ -86,6 +86,20 @@ main {
 }
 
 /* Nav Modal styles */
+.modal-dialog {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  padding: 1.2em;
+  width: 90%;
+  height: 98vh;
+  border-radius: 30px;
+  background: #fff;
+  overflow: auto;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 header .modal {
   position: fixed;
@@ -102,6 +116,11 @@ header .modal {
   visibility: hidden;
   opacity: 0;
   transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 header .modal.is-visible {
@@ -154,23 +173,8 @@ header .close-modal {
   font-size: 2em;
 }
 
-header .modal-footer-image {
+.top .modal-footer-image {
   margin-bottom: 0.5em;
-}
-
-/* Mobile modal Animation */
-[data-animation] .modal-dialog {
-  opacity: 0;
-  transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
-}
-
-[data-animation].is-visible .modal-dialog {
-  opacity: 1;
-  transition-delay: 0.2s;
-}
-
-[data-animation='slideInOutRight'].is-visible .modal-dialog {
-  transform: none;
 }
 
 /* Hero Styles */
@@ -335,7 +339,7 @@ header .modal-footer-image {
 }
 
 /* Work detail modal styles */
-.modal {
+article .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -351,28 +355,10 @@ header .modal-footer-image {
   transition: all 0.35s ease-in;
 }
 
-.modal.is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.modal-dialog {
-  position: relative;
-  font-family: 'Inter', sans-serif;
-  padding: 1.2em;
-  width: 90%;
-  height: 98vh;
-  border-radius: 30px;
-  background: #fff;
-  overflow: auto;
-  cursor: default;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 .modal-dialog .work-image img {
   border-radius: 25px;
 }
+
 .modal-dialog .close-proj-modal {
   position: absolute;
   top: 3%;
@@ -383,43 +369,37 @@ header .modal-footer-image {
   font-size: 1.5rem;
   color: #fff;
 }
-.modal-dialog .project-title {
-  width: 80%;
-}
+
 .modal-dialog .project-title {
   color: #172b4d;
   font-weight: 600;
   font-size: 3em;
   line-height: 1.2em;
   padding-top: 0.5em;
+  width: 80%;
 }
+
 .modal-dialog .work-tags {
   margin: 10px 0;
 }
+
 .modal-dialog .work-tags ul {
   justify-content: flex-start;
 }
 
-.modal-dialog .work-tags a {
-  font-size: 1em;
-}
 .modal-dialog .project-text {
   font-size: 18px;
   line-height: 34px;
   color: #344563;
   height: 50%;
-  margin: 16px 0px;
+  margin: 16px 0;
 }
+
 .modal-dialog .project-btn {
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
   margin: 10px 0;
-}
-
-.modal-dialog .project-btn a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .modal-dialog .btn {
@@ -452,7 +432,8 @@ header .modal-footer-image {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(../assets/about-top-vector.png),
+  background-image:
+    url(../assets/about-top-vector.png),
     url(../assets/about-bottom-vector.png);
   background-position: top right, left bottom;
   background-repeat: no-repeat;
@@ -518,6 +499,15 @@ header .modal-footer-image {
 
 .skill-social a {
   color: #36b37e;
+}
+
+.modal-dialog .modal-tags a {
+  font-size: 1em;
+}
+
+.modal-dialog .project-btn a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Contact section styles */
@@ -784,6 +774,7 @@ header .modal-footer-image {
     cursor: default;
     margin: 5em;
   }
+
   .modal-dialog .close-proj-modal {
     position: absolute;
     top: 1%;
@@ -827,7 +818,8 @@ header .modal-footer-image {
 
   /* About me styles */
   .about {
-    background-image: url(../assets/about-right-web.png),
+    background-image:
+      url(../assets/about-right-web.png),
       url(../assets/groups.png);
     background-position: top right, 0% 35%;
     background-repeat: no-repeat;
@@ -866,8 +858,10 @@ header .modal-footer-image {
 
   .contact {
     width: 100%;
-    background-image: url(../assets/contact-right.png),
-      url(../assets/contact-center.png), url(../assets/contact-left.png);
+    background-image:
+      url(../assets/contact-right.png),
+      url(../assets/contact-center.png),
+      url(../assets/contact-left.png);
     background-position: 100% 80%, 25% 95%, bottom left;
     background-repeat: no-repeat;
   }

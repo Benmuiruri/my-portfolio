@@ -74,7 +74,7 @@ const openEls = document.querySelectorAll('[data-open]');
 const closeEls = document.querySelectorAll('[data-close]');
 const isVisible = 'is-visible';
 const navLinks = document.querySelectorAll('.web-header-link');
-const closeProjectModal = document.querySelector('#close-project-modal');
+// const closeProjectModal = document.querySelector('#close-project-modal');
 
 // Create work detail html elements
 function modal(number) {
@@ -108,7 +108,7 @@ function modal(number) {
   insideDiv.appendChild(headerDiv);
   // Create div to hold tags
   const technologyTags = document.createElement('div');
-  technologyTags.className = 'work-tags';
+  technologyTags.className = 'work-tags modal-tags';
   insideDiv.appendChild(technologyTags);
   // Create ul for tags inside div
   const techologyList = document.createElement('ul');
@@ -185,12 +185,12 @@ for (const el of closeEls) {
 }
 
 // Close project modal
-if (closeProjectModal) {
-  closeProjectModal.addEventListener('click', () => {
-    document.querySelector('.modal.is-visible').classList.remove(isVisible);
-    document.body.style.overflow = 'auto';
-  });
-}
+// if (closeProjectModal) {
+//   closeProjectModal.addEventListener('click', () => {
+//     document.querySelector('.modal.is-visible').classList.remove(isVisible);
+//     document.body.style.overflow = 'auto';
+//   });
+// }
 
 // add event listener on click outside modal to close modal and enable scroll
 document.addEventListener('click', (e) => {
