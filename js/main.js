@@ -1,7 +1,7 @@
 // array of project objects
 
 const project1 = {
-  title: 'Project One',
+  title: 'Keeping track of hundreds of components',
   id: 1,
   imageSrc:
     'https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg',
@@ -71,6 +71,7 @@ const projects = [project1, project2, project3, project4, project5, project6];
 // Target open and close triggers in html
 
 const openEls = document.querySelectorAll('[data-open]');
+// const openElems = Array.from(openEls);
 const closeEls = document.querySelectorAll('[data-close]');
 const isVisible = 'is-visible';
 const navLinks = document.querySelectorAll('.web-header-link');
@@ -97,12 +98,13 @@ function modal(number) {
   const closeModalBtn = document.createElement('button');
   closeModalBtn.innerHTML = 'X';
   closeModalBtn.id = 'close-project-modal';
+  closeModalBtn.className = 'close-proj-modal';
   imageDiv.appendChild(closeModalBtn);
   // Create h1 inside div
   const headerDiv = document.createElement('div');
-  headerDiv.className = 'work-title';
+  headerDiv.className = 'project-title';
   const projectTitle = document.createElement('h3');
-  projectTitle.textContent = `My title is ${projects[number].title}`;
+  projectTitle.textContent = `${projects[number].title}`;
   headerDiv.appendChild(projectTitle);
   insideDiv.appendChild(headerDiv);
   // Create div to hold tags
@@ -128,20 +130,35 @@ function modal(number) {
   const projectText = document.createTextNode(
     `${projects[number].description}`
   );
+  projectTextDiv.className = 'project-text';
   projectTextDiv.appendChild(projectText);
   insideDiv.appendChild(projectTextDiv);
   // Create div for buttons
   const projectButtons = document.createElement('div');
+  projectButtons.className = 'project-btn';
+  // Create live and source buttons
   const liveButton = document.createElement('button');
   const sourceButton = document.createElement('button');
-  liveButton.className = 'btn';
-  sourceButton.className = 'btn';
-  liveButton.innerHTML = 'See Live';
-  sourceButton.innerHTML = 'See Source';
+  liveButton.className = 'btn live-btn';
+  sourceButton.className = 'btn source-btn';
+  // Create a tag inside buttons
+  const liveLink = document.createElement('a');
+  const sourceLink = document.createElement('a');
+  const linkText = document.createTextNode('See Live');
+  const sourceText = document.createTextNode('See Source');
+  liveLink.appendChild(linkText);
+  sourceLink.appendChild(sourceText);
+  liveLink.href = `${projects[number].liveLink}`;
+  sourceLink.href = `${projects[number].githubLink}`;
+  liveLink.setAttribute('target', '_blank');
+  sourceLink.setAttribute('target', '_blank');
+  liveButton.append(liveLink);
+  sourceButton.append(sourceLink);
+  // Create font-awesome icon inside button
   const liveIcon = document.createElement('i');
-  liveIcon.className = 'fa-solid fa-arrow-up-right-from-square';
+  liveIcon.className = 'fa-solid fa-arrow-up-right-from-square project-icon';
   const gitIcon = document.createElement('i');
-  gitIcon.className = 'fa-brands fa-github';
+  gitIcon.className = 'fa-brands fa-github project-icon';
   liveButton.append(liveIcon);
   sourceButton.append(gitIcon);
   projectButtons.appendChild(liveButton);
@@ -152,6 +169,13 @@ function modal(number) {
 }
 
 // Open modal
+// openElems.forEach((el) => {
+// el.addEventListener('click', function () {
+//     const modalId = this.dataset.open;
+//     document.getElementById(modalId).classList.add(isVisible);
+//     document.body.style.overflow = 'hidden';
+// });
+
 for (const el of openEls) {
   el.addEventListener('click', function () {
     const modalId = this.dataset.open;
