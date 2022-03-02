@@ -86,6 +86,22 @@ main {
 }
 
 /* Nav Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c1c7cf;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
 .modal-dialog {
   position: relative;
   font-family: 'Inter', sans-serif;
@@ -339,22 +355,6 @@ header .close-modal {
 }
 
 /* Work detail modal styles */
-article .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #c1c7cf;
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.35s ease-in;
-}
-
 .modal-dialog .work-image img {
   border-radius: 25px;
 }
