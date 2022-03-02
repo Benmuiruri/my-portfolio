@@ -163,6 +163,14 @@ function modal(number) {
   insideDiv.appendChild(projectButtons);
   // Add article to body
   document.body.appendChild(article);
+  // Add close trigger to x button on project detail
+  closeModalBtn.addEventListener('click', () => {
+    if (document.querySelector('.modal.is-visible')) {
+      document
+        .querySelector('.modal.is-visible')
+        .classList.remove('is-visible');
+    }
+  });
 }
 
 // Open modal
@@ -181,14 +189,6 @@ for (const el of closeEls) {
     document.body.style.overflow = 'auto';
   });
 }
-
-// Close project modal
-// if (closeProjectModal) {
-//   closeProjectModal.addEventListener('click', () => {
-//     document.querySelector('.modal.is-visible').classList.remove(isVisible);
-//     document.body.style.overflow = 'auto';
-//   });
-// }
 
 // add event listener on click outside modal to close modal and enable scroll
 document.addEventListener('click', (e) => {
