@@ -366,11 +366,14 @@ header .modal-footer-image {
   background: #fff;
   overflow: auto;
   cursor: default;
-  }
-  .modal-dialog .work-image img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-dialog .work-image img {
   border-radius: 25px;
-  }
-  .modal-dialog .close-proj-modal {
+}
+.modal-dialog .close-proj-modal {
   position: absolute;
   top: 3%;
   right: 6%;
@@ -379,56 +382,60 @@ header .modal-footer-image {
   outline: none;
   font-size: 1.5rem;
   color: #fff;
-  }
-  .modal-dialog .project-title {
+}
+.modal-dialog .project-title {
   width: 80%;
-  }
-  .modal-dialog .project-title h3 {
+}
+.modal-dialog .project-title {
   color: #172b4d;
   font-weight: 600;
   font-size: 3em;
   line-height: 1.2em;
-  }
-  .modal-dialog .work-tags {
+  padding-top: 0.5em;
+}
+.modal-dialog .work-tags {
   margin: 10px 0;
-  }
-  .modal-dialog .work-tags ul {
+}
+.modal-dialog .work-tags ul {
   justify-content: flex-start;
-  }
-  
-  .modal-dialog .work-tags a {
+}
+
+.modal-dialog .work-tags a {
   font-size: 1em;
-  }
-  .modal-dialog .project-text {
-  font-size: 16px;
-  line-height: 24px;
+}
+.modal-dialog .project-text {
+  font-size: 18px;
+  line-height: 34px;
   color: #344563;
-  }
-  .modal-dialog .project-btn {
+  height: 50%;
+  margin: 16px 0px;
+}
+.modal-dialog .project-btn {
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
   margin: 10px 0;
-  }
+}
 
-  .modal-dialog .project-btn a {
-    text-decoration: none;
-    color: #fff;
-    }
-    
-  .modal-dialog .btn {
+.modal-dialog .project-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.modal-dialog .btn {
   width: 48%;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  }
-  
-  .project-icon {
+  border-radius: 6px;
+}
+
+.project-icon {
   font-size: 25px;
   margin-left: 10px;
   color: #fff;
-  } 
+}
 
 /* About me styles */
 
@@ -761,14 +768,14 @@ header .modal-footer-image {
     visibility: hidden;
     opacity: 0;
     transition: all 0.35s ease-in;
-    }
-    
-    .modal.is-visible {
+  }
+
+  .modal.is-visible {
     visibility: visible;
     opacity: 1;
-    }
-    
-    .modal-dialog {
+  }
+
+  .modal-dialog {
     width: 55vw;
     height: 95%;
     border-radius: 5px;
@@ -776,8 +783,8 @@ header .modal-footer-image {
     overflow: auto;
     cursor: default;
     margin: 5em;
-    }
-    .modal-dialog .close-proj-modal {
+  }
+  .modal-dialog .close-proj-modal {
     position: absolute;
     top: 1%;
     right: 2%;
@@ -785,31 +792,39 @@ header .modal-footer-image {
     background: #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 4px;
-    } 
+  }
 
   .modal-dialog .work-image {
-    /* width: 80%; */
-    /* height: 600px; */
-    margin: 0 auto;
     padding-top: 2em;
-    }
-    
-    .modal-dialog .work-image img {
+  }
+
+  .modal-dialog .work-image img {
     height: 600px;
-    }
-    
-    .modal-dialog .project-title {
-    width: 55%;
-    }
-    
-    .modal-dialog .project-btn {
+  }
+
+  .modal-dialog .project-title {
+    width: 60%;
+    padding-top: 0;
+  }
+
+  .modal-dialog .project-btn {
+    width: 35%;
     position: absolute;
-    top: 80%;
-    left: 60%;
+    top: 65%;
+    left: 63%;
     display: flex;
     justify-content: space-between;
-    } 
-  
+  }
+
+  .modal-dialog .project-text {
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .modal-dialog .work-tags {
+    margin: 0;
+  }
+
   /* About me styles */
   .about {
     background-image: url(../assets/about-right-web.png),

@@ -71,11 +71,10 @@ const projects = [project1, project2, project3, project4, project5, project6];
 // Target open and close triggers in html
 
 const openEls = document.querySelectorAll('[data-open]');
-// const openElems = Array.from(openEls);
 const closeEls = document.querySelectorAll('[data-close]');
 const isVisible = 'is-visible';
 const navLinks = document.querySelectorAll('.web-header-link');
-// const closeProjectModal = document.querySelector('#close-project-modal');
+const closeProjectModal = document.querySelector('#close-project-modal');
 
 // Create work detail html elements
 function modal(number) {
@@ -169,13 +168,6 @@ function modal(number) {
 }
 
 // Open modal
-// openElems.forEach((el) => {
-// el.addEventListener('click', function () {
-//     const modalId = this.dataset.open;
-//     document.getElementById(modalId).classList.add(isVisible);
-//     document.body.style.overflow = 'hidden';
-// });
-
 for (const el of openEls) {
   el.addEventListener('click', function () {
     const modalId = this.dataset.open;
@@ -191,11 +183,15 @@ for (const el of closeEls) {
     document.body.style.overflow = 'auto';
   });
 }
+
 // Close project modal
-// closeProjectModal.addEventListener('click', function () {
-//   this.parentElement.classList.remove(isVisible);
-//   document.body.style.overflow = 'auto';
-// });
+if (closeProjectModal) {
+  closeProjectModal.addEventListener('click', () => {
+    document.querySelector('.modal.is-visible').classList.remove(isVisible);
+    document.body.style.overflow = 'auto';
+  });
+}
+
 // add event listener on click outside modal to close modal and enable scroll
 document.addEventListener('click', (e) => {
   if (e.target === document.querySelector('.modal.is-visible')) {
@@ -219,3 +215,5 @@ navLinks.forEach((elem) => {
     document.body.style.overflow = 'auto';
   });
 });
+
+modal();
