@@ -778,7 +778,7 @@ header .close-modal {
   .modal-dialog .close-proj-modal {
     position: absolute;
     top: 2%;
-    right: 2%;
+    right: 2.5%;
     background: #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 4px;
@@ -788,7 +788,7 @@ header .close-modal {
   }
 
   .modal-dialog .work-image {
-    padding-top: 2em;
+    padding-top: 2.3em;
   }
 
   .modal-dialog .work-image img {

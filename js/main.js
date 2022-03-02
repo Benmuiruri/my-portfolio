@@ -77,7 +77,9 @@ const closeElems = Array.from(closeEls);
 const isVisible = 'is-visible';
 const navLinks = document.querySelectorAll('.web-header-link');
 
-// Create work detail html elements
+// Create main page work section html elements
+
+// Create work detail modal html elements
 function modal(number) {
   // Create article modal
   const article = document.createElement('article');
