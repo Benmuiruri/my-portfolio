@@ -126,9 +126,7 @@ function modal(number) {
   });
   // Create paragraph div
   const projectTextDiv = document.createElement('div');
-  const projectText = document.createTextNode(
-    `${projects[number].description}`
-  );
+  const projectText = document.createTextNode(`${projects[number].description}`);
   projectTextDiv.className = 'project-text';
   projectTextDiv.appendChild(projectText);
   insideDiv.appendChild(projectTextDiv);
