@@ -108,6 +108,38 @@ function modal(number) {
   const projectTitle = document.createElement('h3');
   projectTitle.textContent = `${projects[number].title}`;
   headerDiv.appendChild(projectTitle);
+  // Create button div for desktop version
+  // Create div for buttons
+  const desktopProjectButtons = document.createElement('div');
+  desktopProjectButtons.className = 'desktop-project-btn';
+  // Create live and source buttons
+  const deskLiveButton = document.createElement('button');
+  const deskSourceButton = document.createElement('button');
+  deskLiveButton.className = 'btn desk-live-btn';
+  deskSourceButton.className = 'btn desk-source-btn';
+  // Create a tag inside buttons
+  const deskLiveLink = document.createElement('a');
+  const deskSourceLink = document.createElement('a');
+  const deskLinkText = document.createTextNode('See Live');
+  const deskSourceText = document.createTextNode('See Source');
+  deskLiveLink.appendChild(deskLinkText);
+  deskSourceLink.appendChild(deskSourceText);
+  deskLiveLink.href = `${projects[number].liveLink}`;
+  deskSourceLink.href = `${projects[number].githubLink}`;
+  deskLiveLink.setAttribute('target', '_blank');
+  deskSourceLink.setAttribute('target', '_blank');
+  deskLiveButton.append(deskLiveLink);
+  deskSourceButton.append(deskSourceLink);
+  // Create font-awesome icon inside button
+  const deskLiveIcon = document.createElement('i');
+  deskLiveIcon.className = 'fa-solid fa-arrow-up-right-from-square project-icon';
+  const deskGitIcon = document.createElement('i');
+  deskGitIcon.className = 'fa-brands fa-github project-icon';
+  deskLiveButton.append(deskLiveIcon);
+  deskSourceButton.append(deskGitIcon);
+  desktopProjectButtons.appendChild(deskLiveButton);
+  desktopProjectButtons.appendChild(deskSourceButton);
+  headerDiv.appendChild(desktopProjectButtons);
   insideDiv.appendChild(headerDiv);
   // Create div to hold tags
   const technologyTags = document.createElement('div');

@@ -370,7 +370,7 @@ header .close-modal {
   color: #fff;
 }
 
-.modal-dialog .project-title {
+.modal-dialog .project-title h3 {
   color: #172b4d;
   font-weight: 600;
   font-size: 3em;
@@ -415,6 +415,10 @@ header .close-modal {
   font-size: 25px;
   margin-left: 10px;
   color: #fff;
+}
+
+.desktop-project-btn {
+  display: none;
 }
 
 /* About me styles */
@@ -482,15 +486,6 @@ header .close-modal {
   padding-bottom: 10px;
 }
 
-.about-skill h3 {
-  color: #344563;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
 .skill-social {
   padding: 12px;
   border-radius: 8px;
@@ -501,13 +496,14 @@ header .close-modal {
   color: #36b37e;
 }
 
-.modal-dialog .modal-tags a {
-  font-size: 1em;
-}
-
+.desktop-project-btn a,
 .modal-dialog .project-btn a {
   text-decoration: none;
   color: #fff;
+}
+
+.modal-dialog .modal-tags a {
+  font-size: 1em;
 }
 
 /* Contact section styles */
@@ -522,15 +518,6 @@ header .close-modal {
 .contact-text {
   padding: 20px;
   margin: 10px 5px;
-}
-
-.contact-text h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172b4d;
 }
 
 .shimmer {
@@ -795,18 +782,52 @@ header .close-modal {
     height: 600px;
   }
 
-  .modal-dialog .project-title {
+  .about-skill h3 {
+    color: #344563;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .contact-text h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .modal-dialog .project-title h3 {
     width: 60%;
     padding-top: 0;
   }
 
   .modal-dialog .project-btn {
-    width: 35%;
-    position: absolute;
-    top: 65%;
-    left: 63%;
+    display: none;
+  }
+
+  .project-title {
     display: flex;
+  }
+
+  .desktop-project-btn {
+    display: flex;
+    flex: 1;
     justify-content: space-between;
+    padding: 12px 0;
+    margin: 10px 0;
+  }
+
+  .desktop-project-btn .btn {
+    width: 48%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    border-radius: 6px;
   }
 
   .modal-dialog .project-text {
