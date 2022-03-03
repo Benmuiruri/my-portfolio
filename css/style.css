@@ -584,19 +584,20 @@ header .close-modal {
 .submit-btn {
   margin: 10px 5px;
 }
+
 /* Form styles */
 .form-field.error input {
-    border-color: #dc3545;
+  border-color: #ff6163;
 }
 
 .form-field.success input {
-    border-color: #28a745;
+  border-color: #28a745;
 }
-
 
 .form-field small {
-    color: #dc3545;
+  color: #ff6163;
 }
+
 /* Footer Section */
 .footer {
   width: 100%;
