@@ -247,3 +247,5 @@ navLinks.forEach((elem) => {
     document.body.style.overflow = 'auto';
   });
 });
+
+modal();
