@@ -181,7 +181,7 @@
                 </div>
                 <div class="work-button">
                   <button
-                  onclick="modal(0)"
+                    onclick="modal(0)"
                     class="btn open-modal"
                     data-open="project1"
                     type="button"
@@ -216,10 +216,12 @@
                   </ul>
                 </div>
                 <div class="work-button">
-                  <button onclick="modal(1)"
+                  <button
+                    onclick="modal(1)"
                     class="btn open-modal"
                     data-open="project2"
-                    type="button">
+                    type="button"
+                  >
                     See Project
                   </button>
                 </div>
@@ -253,10 +255,12 @@
                   </ul>
                 </div>
                 <div class="work-button">
-                  <button onclick="modal(2)"
+                  <button
+                    onclick="modal(2)"
                     class="btn open-modal"
                     data-open="project3"
-                    type="button">
+                    type="button"
+                  >
                     See Project
                   </button>
                 </div>
@@ -287,10 +291,12 @@
                   </ul>
                 </div>
                 <div class="work-button">
-                  <button onclick="modal(3)"
+                  <button
+                    onclick="modal(3)"
                     class="btn open-modal"
                     data-open="project4"
-                    type="button">
+                    type="button"
+                  >
                     See Project
                   </button>
                 </div>
@@ -324,10 +330,12 @@
                   </ul>
                 </div>
                 <div class="work-button">
-                  <button onclick="modal(4)"
+                  <button
+                    onclick="modal(4)"
                     class="btn open-modal"
                     data-open="project5"
-                    type="button">
+                    type="button"
+                  >
                     See Project
                   </button>
                 </div>
@@ -358,10 +366,12 @@
                   </ul>
                 </div>
                 <div class="work-button">
-                  <button onclick="modal(5)"
+                  <button
+                    onclick="modal(5)"
                     class="btn open-modal"
                     data-open="project6"
-                    type="button">
+                    type="button"
+                  >
                     See Project
                   </button>
                 </div>
@@ -461,33 +471,43 @@
           <form
             action="https://formspree.io/f/myyoweka"
             method="post"
-            class="contact-form"
+            class="contact-form form"
+            id="signup"
           >
             <fieldset>
-              <input
-                type="text"
-                id="full-name"
-                name="user-full-name"
-                maxlength="30"
-                placeholder="Full Name"
-                required
-              />
-              <input
-                type="email"
-                name="user_email"
-                id="email"
-                required
-                placeholder="Email address"
-              />
-              <textarea
-                name="user-message"
-                id="user-message"
-                cols="30"
-                rows="5"
-                maxlength="500"
-                required
-                placeholder="Enter text here"
-              ></textarea>
+              <div class="form-field">
+                <label for="full-name"></label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  maxlength="30"
+                  placeholder="Full Name"
+                />
+                <small></small>
+              </div>
+              <div class="form-field">
+                <label for="user-email"></label>
+                <input
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Email address"
+                />
+                <small></small>
+              </div>
+              <div class="form-field">
+                <label for="user-message"></label>
+                <textarea
+                  name="user-message"
+                  id="user-message"
+                  cols="30"
+                  rows="5"
+                  maxlength="500"
+                  placeholder="Enter text here"
+                ></textarea>
+                <small></small>
+              </div>
             </fieldset>
             <button type="submit" class="btn submit-btn">Get in touch</button>
           </form>
@@ -529,5 +549,6 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/form-validation.js"></script>
   </body>
 </html>

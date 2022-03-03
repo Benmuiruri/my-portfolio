@@ -520,6 +520,15 @@ header .close-modal {
   margin: 10px 5px;
 }
 
+.contact .contact-text h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
 .shimmer {
   transition: transform 2s;
 }
@@ -569,12 +578,25 @@ header .close-modal {
   font-size: 15px;
   line-height: 24px;
   font-weight: 500;
+  width: 99%;
 }
 
 .submit-btn {
   margin: 10px 5px;
 }
+/* Form styles */
+.form-field.error input {
+    border-color: #dc3545;
+}
 
+.form-field.success input {
+    border-color: #28a745;
+}
+
+
+.form-field small {
+    color: #dc3545;
+}
 /* Footer Section */
 .footer {
   width: 100%;
@@ -789,15 +811,6 @@ header .close-modal {
     line-height: 32px;
     text-align: center;
     padding-bottom: 50px;
-  }
-
-  .contact-text h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-    color: #172b4d;
   }
 
   .modal-dialog .project-title h3 {
