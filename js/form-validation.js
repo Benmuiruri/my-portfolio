@@ -1,6 +1,6 @@
 // Form validation
 const form = document.querySelector('#signup');
-const emailEl = document.querySelector('#user-email');
+const emailEl = document.querySelector('#email');
 
 // Functions to show error / success
 const showError = (input, message) => {
