@@ -7,3 +7,17 @@ function check() {
   }
 }
 window.onload = check;
+
+function populateStorage() {
+  const fullName = form.elements.fullName.value;
+  const email = form.elements.email.value;
+  const message = form.elements.message.value;
+  const storage = {
+    fullName,
+    email,
+    message,
+  };
+  window.localStorage.setItem('storage', JSON.stringify(storage));
+}
+
+form.addEventListener('change', populateStorage);
