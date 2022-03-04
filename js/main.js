@@ -212,7 +212,7 @@ function modal(number) {
 }
 
 openElems.forEach((el) => {
-  el.addEventListener('click', () => {
+  el.addEventListener('click', function () {
     const modalId = this.dataset.open;
     document.getElementById(modalId).classList.add(isVisible);
     document.body.style.overflow = 'hidden';
@@ -220,7 +220,7 @@ openElems.forEach((el) => {
 });
 // Close modal
 closeElems.forEach((el) => {
-  el.addEventListener('click', () => {
+  el.addEventListener('click', function () {
     this.parentElement.parentElement.classList.remove(isVisible);
     document.body.style.overflow = 'auto';
   });
