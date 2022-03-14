@@ -45,7 +45,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Huge thanks to [Didier Sangwa](https://github.com/sangwa7) for his contribution to the project
+- Huge thanks to [Didier Sangwa](https://github.com/sangwa7), [Nabil](https://github.com/NabilHY), and [Solomon](https://github.com/Achilles-Dev) for their contribution to the project
 
 ## 📝 License
 
