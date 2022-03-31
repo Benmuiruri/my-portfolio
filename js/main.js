@@ -1,62 +1,61 @@
 // array of project objects
 
 const project1 = {
-  title: 'Keeping track of hundreds of components',
+  title: 'Book Library Project',
   id: 1,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg',
-  technologies: ['html', 'css', 'Ruby on Rails'],
+    'https://res.cloudinary.com/optprime/image/upload/v1648714092/project-screenshots/my-book-library_puoo2h.png',
+  technologies: ['html', 'CSS', 'Javascript', 'Bootstrap'],
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-  liveLink: 'https://benmuiruri.github.io/my-portfolio/',
-  githubLink: 'https://github.com/Benmuiruri/my-portfolio',
+    'A website for keeping track of your favorite books. This website displays a list of added books, allows adding new books and removing books from the list. It is built mainly using Javascript and Bootstrap.',
+  liveLink: 'https://benmuiruri.github.io/awesome-books/',
+  githubLink: 'https://github.com/Benmuiruri/awesome-books',
 };
 const project2 = {
-  title: 'Project Two',
+  title: 'Awesome Books Project',
   id: 2,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg',
-  technologies: ['html', 'css', 'Ruby on Rails'],
+    'https://res.cloudinary.com/optprime/image/upload/v1648714399/project-screenshots/awesome-books_vmvvyp.png',
+  technologies: ['html', 'CSS', 'Javascript'],
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-  liveLink: 'https://benmuiruri.github.io/my-portfolio/',
-  githubLink: 'https://github.com/Benmuiruri/my-portfolio',
+    'A website for keeping track of your favorite books. This website displays a list of added books, allows adding new books and removing books from the list. It is built mainly using Javascript.',
+  liveLink: 'https://benmuiruri.github.io/microverse-awesome-books/',
+  githubLink: 'https://github.com/Benmuiruri/microverse-awesome-books',
 };
 const project3 = {
-  title: 'Project Three',
+  title: 'F1 Sustainability Summit',
   id: 3,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg',
-  technologies: ['html', 'css', 'Ruby on Rails'],
+    'https://res.cloudinary.com/optprime/image/upload/v1648715004/project-screenshots/f1-sustainability_rxpdpy.png',
+  technologies: ['html', 'css', 'Javascript'],
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-  liveLink: 'https://benmuiruri.github.io/my-portfolio/',
-  githubLink: 'https://github.com/Benmuiruri/my-portfolio',
+    'This a conference website of an upcoming Formula 1 conference. The website is mainly built using Javascript and HTML.',
+  liveLink: 'https://benmuiruri.github.io/f1-sustainability-capstone/',
+  githubLink: 'https://github.com/Benmuiruri/f1-sustainability-capstone',
 };
 const project4 = {
-  title: 'Project Four',
+  title: 'To Do List',
   id: 4,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg',
-  technologies: ['html', 'css', 'Ruby on Rails'],
+    'https://res.cloudinary.com/optprime/image/upload/v1648715272/project-screenshots/list_isevs8.png',
+  technologies: ['html', 'css', 'Javascript', 'Webpack'],
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-  liveLink: 'https://benmuiruri.github.io/my-portfolio/',
-  githubLink: 'https://github.com/Benmuiruri/my-portfolio',
+    'A simple yet powerful vanilla JS To Do List bundled using Webpack. You can use this To-Do list to add new tasks, edit existing tasks, mark tasks as completed, and delete tasks from the To-Do list.',
+  liveLink: 'https://benmuiruri.github.io/to-do-list/#',
+  githubLink: 'https://github.com/Benmuiruri/to-do-list',
 };
 const project5 = {
-  title: 'Project Five',
+  title: 'Another Personal Portfolio',
   id: 5,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg',
-  technologies: ['html', 'css', 'Ruby on Rails'],
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-  liveLink: 'https://benmuiruri.github.io/my-portfolio/',
-  githubLink: 'https://github.com/Benmuiruri/my-portfolio',
+    'https://res.cloudinary.com/optprime/image/upload/v1648715571/project-screenshots/portfolio_uyg3je.png',
+  technologies: ['html', 'css'],
+  description: 'Personal Portfolio built entirely with HTML and CSS',
+  liveLink: 'https://benmuiruri.github.io/portfolio/',
+  githubLink: 'https://github.com/Benmuiruri/portfolio',
 };
 const project6 = {
-  title: 'Project Six',
+  title: 'Upcoming Project',
   id: 6,
   imageSrc:
     'https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg',
