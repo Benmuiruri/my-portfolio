@@ -131,8 +131,7 @@ function modal(number) {
   deskSourceButton.append(deskSourceLink);
   // Create font-awesome icon inside button
   const deskLiveIcon = document.createElement('i');
-  deskLiveIcon.className =
-    'fa-solid fa-arrow-up-right-from-square project-icon';
+  deskLiveIcon.className = 'fa-solid fa-arrow-up-right-from-square project-icon';
   const deskGitIcon = document.createElement('i');
   deskGitIcon.className = 'fa-brands fa-github project-icon';
   deskLiveButton.append(deskLiveIcon);
@@ -162,7 +161,7 @@ function modal(number) {
   // Create paragraph div
   const projectTextDiv = document.createElement('div');
   const projectText = document.createTextNode(
-    `${projects[number].description}`
+    `${projects[number].description}`,
   );
   projectTextDiv.className = 'project-text';
   projectTextDiv.appendChild(projectText);
