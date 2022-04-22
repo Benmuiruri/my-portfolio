@@ -55,15 +55,15 @@ const project5 = {
   githubLink: 'https://github.com/Benmuiruri/portfolio',
 };
 const project6 = {
-  title: 'Upcoming Project',
+  title: 'Stream-It Movie Library',
   id: 6,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1588664010/christopher-gower-m_HRfLhgABo-unsplash_wrglqj.jpg',
-  technologies: ['html', 'css', 'Ruby on Rails'],
+    'https://res.cloudinary.com/optprime/image/upload/v1650634821/project-screenshots/stream_d7ytzl.png',
+  technologies: ['html', 'css', 'Javascript', 'Webpack'],
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-  liveLink: 'https://benmuiruri.github.io/my-portfolio/',
-  githubLink: 'https://github.com/Benmuiruri/my-portfolio',
+    'A movie library website. Browse a list of your favorite movies and tv shows on the Steam-It Movie Database.',
+  liveLink: 'https://benmuiruri.github.io/stream-it-capstone/',
+  githubLink: 'https://github.com/Benmuiruri/stream-it-capstone',
 };
 const projects = [project1, project2, project3, project4, project5, project6];
 
