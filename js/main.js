@@ -15,12 +15,12 @@ const project2 = {
   title: 'Awesome Books Project',
   id: 2,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1648714399/project-screenshots/awesome-books_vmvvyp.png',
-  technologies: ['html', 'CSS', 'Javascript'],
+    'https://res.cloudinary.com/optprime/image/upload/v1659332586/project-screenshots/react_portfolio_pmolfz.png',
+  technologies: ['html', 'SCSS', 'Javascript', 'React'],
   description:
-    'A website for keeping track of your favorite books. This website displays a list of added books, allows adding new books and removing books from the list. It is built mainly using Javascript.',
-  liveLink: 'https://benmuiruri.github.io/microverse-awesome-books/',
-  githubLink: 'https://github.com/Benmuiruri/microverse-awesome-books',
+    'My Personal Portfolio Website that contains my personal projects and information. The Portfolio is a react version of my portfolio.',
+  liveLink: 'https://github.com/Benmuiruri/react-portfolio',
+  githubLink: 'https://cool-react-portfolio.netlify.app/contact',
 };
 const project3 = {
   title: 'F1 Sustainability Summit',
@@ -37,12 +37,12 @@ const project4 = {
   title: 'To Do List',
   id: 4,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1648715272/project-screenshots/list_isevs8.png',
-  technologies: ['html', 'css', 'Javascript', 'Webpack'],
+    'https://res.cloudinary.com/optprime/image/upload/v1659332200/project-screenshots/recipearea_yfeglk.png',
+  technologies: ['Bootstrap', 'css3', 'Ruby on Rails', 'Ruby'],
   description:
-    'A simple yet powerful vanilla JS To Do List bundled using Webpack. You can use this To-Do list to add new tasks, edit existing tasks, mark tasks as completed, and delete tasks from the To-Do list.',
-  liveLink: 'https://benmuiruri.github.io/to-do-list/#',
-  githubLink: 'https://github.com/Benmuiruri/to-do-list',
+    'The Rails cook book app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list',
+  liveLink: 'rails-cook-book.herokuapp.com/',
+  githubLink: 'https://github.com/Benmuiruri/rails-cook-book',
 };
 const project5 = {
   title: 'Another Personal Portfolio',
