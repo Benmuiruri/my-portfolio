@@ -12,7 +12,7 @@ const project1 = {
   githubLink: 'https://github.com/Benmuiruri/awesome-books',
 };
 const project2 = {
-  title: 'Awesome Books Project',
+  title: 'React Based Portfolio',
   id: 2,
   imageSrc:
     'https://res.cloudinary.com/optprime/image/upload/v1659332586/project-screenshots/react_portfolio_pmolfz.png',
@@ -34,7 +34,7 @@ const project3 = {
   githubLink: 'https://github.com/Benmuiruri/f1-sustainability-capstone',
 };
 const project4 = {
-  title: 'To Do List',
+  title: 'Rails Cook Book',
   id: 4,
   imageSrc:
     'https://res.cloudinary.com/optprime/image/upload/v1659332200/project-screenshots/recipearea_yfeglk.png',
