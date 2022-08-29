@@ -1,15 +1,16 @@
+// @ts-nocheck
 // array of project objects
 
 const project1 = {
   title: 'Book Library Project',
   id: 1,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1648714092/project-screenshots/my-book-library_puoo2h.png',
+    'https://res.cloudinary.com/optprime/image/upload/v1661784401/project-screenshots/Screenshot_from_2022-08-29_17-45-27_z5foq3.png',
   technologies: ['html', 'CSS', 'Javascript', 'Bootstrap'],
   description:
-    'A website for keeping track of your favorite books. This website displays a list of added books, allows adding new books and removing books from the list. It is built mainly using Javascript and Bootstrap.',
-  liveLink: 'https://benmuiruri.github.io/awesome-books/',
-  githubLink: 'https://github.com/Benmuiruri/awesome-books',
+    'he app allows you to monitor your expenses per category and your total expenses.Once logged in you can add the list of Categories you wish to track and from there you can add expenses under your respectrive categories. Each category has a unique icon that allows you to visualize your expenses.',
+  liveLink: 'https://rails-mint.herokuapp.com//',
+  githubLink: 'https://github.com/Benmuiruri/rails-mint',
 };
 const project2 = {
   title: 'React Based Portfolio',
@@ -19,8 +20,8 @@ const project2 = {
   technologies: ['html', 'SCSS', 'Javascript', 'React'],
   description:
     'My Personal Portfolio Website that contains my personal projects and information. The Portfolio is a react version of my portfolio.',
-  liveLink: 'https://github.com/Benmuiruri/react-portfolio',
-  githubLink: 'https://cool-react-portfolio.netlify.app/contact',
+  liveLink: 'https://cool-react-portfolio.netlify.app/',
+  githubLink: 'https://github.com/Benmuiruri/react-portfolio',
 };
 const project3 = {
   title: 'F1 Sustainability Summit',
@@ -45,14 +46,15 @@ const project4 = {
   githubLink: 'https://github.com/Benmuiruri/rails-cook-book',
 };
 const project5 = {
-  title: 'Another Personal Portfolio',
+  title: 'Prestine Car Hire',
   id: 5,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1648715571/project-screenshots/portfolio_uyg3je.png',
-  technologies: ['html', 'css'],
-  description: 'Personal Portfolio built entirely with HTML and CSS',
-  liveLink: 'https://benmuiruri.github.io/portfolio/',
-  githubLink: 'https://github.com/Benmuiruri/portfolio',
+    'https://res.cloudinary.com/optprime/image/upload/v1661784645/project-screenshots/Screenshot_from_2022-08-29_17-50-38_kyrjvv.png',
+  technologies: ['html', 'css', 'React', 'Ruby on Rails', 'Ruby'],
+  description:
+    'Prestine Car Hire is a car rental company web app made up of a React front-end and a Rails API backend. Prestine Cars Frontend is a React frontend application for renting cars. The application is mobile and web accessible to allow users to sign up, select a city they are visiting and then select a car to hire from a list of available cars in the particular city. Prestine Cars Backend is a Rails API application for serving a frontend React application for renting cars.',
+  liveLink: 'https://prestine-carz.herokuapp.com/cities',
+  githubLink: 'https://github.com/Prestine-Cars',
 };
 const project6 = {
   title: 'Stream-It Movie Library',
