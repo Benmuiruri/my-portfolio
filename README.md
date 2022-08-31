@@ -43,10 +43,6 @@ Feel free to check the [issues page](https://github.com/Benmuiruri/my-portfolio/
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Huge thanks to [Didier Sangwa](https://github.com/sangwa7), [Nabil](https://github.com/NabilHY), and [Solomon](https://github.com/Achilles-Dev) for their contribution to the project
-
 ## 📝 License
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
