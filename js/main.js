@@ -24,15 +24,15 @@ const project2 = {
   githubLink: 'https://github.com/Benmuiruri/react-portfolio',
 };
 const project3 = {
-  title: 'F1 Sustainability Summit',
+  title: 'Cable Spark Ltd.',
   id: 3,
   imageSrc:
-    'https://res.cloudinary.com/optprime/image/upload/v1648715004/project-screenshots/f1-sustainability_rxpdpy.png',
-  technologies: ['html', 'css', 'Javascript'],
+    'https://res.cloudinary.com/optprime/image/upload/v1662641379/project-screenshots/cable_spark_zg2gwm.png',
+  technologies: ['Ruby', 'Jekyll', 'SCSS', 'Javascript'],
   description:
-    'This a conference website of an upcoming Formula 1 conference. The website is mainly built using Javascript and HTML.',
-  liveLink: 'https://benmuiruri.github.io/f1-sustainability-capstone/',
-  githubLink: 'https://github.com/Benmuiruri/f1-sustainability-capstone',
+    'A website for a Nairobi-based telecommunication service provider company. The website is built from a Jekyll template customized to the clients specifications.',
+  liveLink: 'https://cable-spark.netlify.app/',
+  githubLink: 'https://github.com/Benmuiruri/cablespark',
 };
 const project4 = {
   title: 'Rails Cook Book',
