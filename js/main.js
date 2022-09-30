@@ -42,7 +42,7 @@ const project4 = {
   technologies: ['Bootstrap', 'css3', 'Ruby on Rails', 'Ruby'],
   description:
     'The Rails cook book app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list',
-  liveLink: 'rails-cook-book.herokuapp.com/',
+  liveLink: 'https://rails-cook-book.herokuapp.com/',
   githubLink: 'https://github.com/Benmuiruri/rails-cook-book',
 };
 const project5 = {
@@ -64,8 +64,8 @@ const project6 = {
   technologies: ['html', 'css', 'Javascript', 'Webpack'],
   description:
     'A movie library website. Browse a list of your favorite movies and tv shows on the Steam-It Movie Database.',
-  liveLink: 'https://benmuiruri.github.io/stream-it-capstone/',
-  githubLink: 'https://github.com/Benmuiruri/stream-it-capstone',
+  liveLink: 'https://stream-it-movie-library.netlify.app/',
+  githubLink: 'https://github.com/Benmuiruri/stream-it-movie-library',
 };
 const projects = [project1, project2, project3, project4, project5, project6];
 
